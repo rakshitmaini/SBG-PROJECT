@@ -1,41 +1,45 @@
 import Slider from "react-slick";
-import styled from "./style.carousel";
+import CarouselWrapper from "./style.carousel";
 
 const settings = {
   dots: true,
+  // arrows: true,
   infinite: true,
-  speed: 500,
+  autoplaySpeed: 5000,
+  autoplay: true,
+  fade: true,
   slidesToShow: 1,
   slidesToScroll: 1,
+  mobileFirst: true,
 };
+const BannerList = [
+  { image: "/images/image1.jpg" },
+  { image: "/images/image2.jpg" },
+  { image: "/images/image3.jpg" },
+];
 
 const Carousel = () => {
   return (
     <>
-      <styled>
-        <carousel>
-          <Slider className="hello" {...settings}>
-            <div>
-              <img src="./public/images/image1.jpg" width="100%" />
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
+      <CarouselWrapper>
+        <div className="container-fluid">
+          <Slider {...settings}>
+            {BannerList.map((banner, i) => (
+              <div key={i} className="banner-image">
+                <img src={banner.image} width="100%" />
+              </div>
+            ))}
           </Slider>
-        </carousel>
-      </styled>
+          <div className="overlay"></div>
+          <div className="overlay-text">
+            <h1>
+              WE HELP YOU SECURE YOUR <br /> FINANCIAL FUTURE.
+            </h1>
+            <h3>India’s most trusted wealth management company</h3>
+          </div>
+        </div>
+        {/* <div className="test"></div> */}
+      </CarouselWrapper>
     </>
   );
 };
