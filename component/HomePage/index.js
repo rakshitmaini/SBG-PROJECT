@@ -2,15 +2,15 @@ import Carousel from "./Carousel";
 import Team from "./Team";
 import Partner from "./Partners";
 import Services from "./Services";
-import InfoTiles from "./info-tiles";
+// import InfoTiles from "./info-tiles";
 
 const HomePage = () => {
   return (
     <>
       <Carousel />
-      {/* <Team /> */}
+      <Team />
       <Services />
-      <InfoTiles />
+      {/* <InfoTiles /> */}
       <Partner />
     </>
   );

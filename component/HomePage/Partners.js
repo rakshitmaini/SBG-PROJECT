@@ -1,11 +1,5 @@
 import React from 'react'
 import PartnerWrapper from './styledComponent/style.partner'
-// import Hdfc from './assetComponent/hdfc.jpg';
-// import Aditya from './assetComponent/aditya-birla.jpg';
-// import Metlife from './assetComponent/metlife.jpg';
-// import National from './assetComponent/national.jpeg';
-// import Star from './assetComponent/starhealth.jpg';
-// import Tata from './assetComponent/tataaig.png';
 
 export default function Partners() {
     const images = [
