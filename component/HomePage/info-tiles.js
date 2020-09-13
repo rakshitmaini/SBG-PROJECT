@@ -1,4 +1,4 @@
-import InfoWrapper from "./style.info-tiles";
+import InfoWrapper from "./styledComponent/style.info-tiles";
 
 const TilesData = [
   {

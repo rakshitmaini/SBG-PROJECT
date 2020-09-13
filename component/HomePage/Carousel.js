@@ -1,5 +1,5 @@
 import Slider from "react-slick";
-import CarouselWrapper from "./style.carousel";
+import CarouselWrapper from "./styledComponent/style.carousel";
 
 const settings = {
   dots: true,
