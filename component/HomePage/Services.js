@@ -1,5 +1,5 @@
 import React from "react";
-import ServicesWrapper from "./style.services";
+import ServicesWrapper from "./styledComponent/style.services";
 
 const ServicesInfo = [
   {

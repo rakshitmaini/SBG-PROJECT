@@ -1,50 +1,81 @@
-import React from 'react'
-import PartnerWrapper from './styledComponent/style.partner'
+import React, { useRef } from "react";
+import PartnerWrapper from "./styledComponent/style.partner";
+import Slider from "react-slick";
+
+const settings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplaySpeed: 3000,
+    autoplay: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+};
+
+const imagesList = [
+    {
+        icon: "fa-eercast",
+    },
+    {
+        icon: "fa-quora",
+    },
+    {
+        icon: "fa-superpowers",
+    },
+    {
+        icon: "fa-bandcamp",
+    },
+    {
+        icon: "fa-telegram",
+    },
+    {
+        icon: "fa-imdb",
+    },
+    {
+        icon: "fa-podcast",
+    },
+    {
+        icon: "fa-meetup",
+    },
+];
 
 export default function Partners() {
-    const images = [
-        {
-            src: '/homeAssets/hdfc.jpg'
-        },
-        {
-            src: '/homeAssets/aditya-birla.jpg'
-        },
-        {
-            src: '/homeAssets/metlife.jpg'
-        },
-        {
-            src: '/homeAssets/national.jpeg'
-        },
-        {
-            src: '/homeAssets/starhealth.jpg'
-        },
-        {
-            src: '/homeAssets/tataaig.png'
-        }
-    ];
-    return (
+    const customSlider = useRef();
 
+    return (
         <PartnerWrapper>
-            <div style={{ textAlign: 'center' }}>
-                <span style={{ color: '#0e43a5', fontSize: '4rem' }}>
-                    Our Partners
-                </span>
-            </div>
-            <div className="slider-main">
-                <div className="slider">
-                    <div className="slide-track">
-                        {images.map((img, i) => (
-                            <div className="slide">
-                                <img
-                                    src={img.src} height="100" width="250" alt=""
-                                />
+            <div className="container-fluid">
+                <div className="title">
+                    <h1>A Few of our Partner Companies</h1>
+                </div>
+                <div className="slider-block">
+                    <span className="prev">
+                        <i
+                            onClick={() => customSlider.current.slickPrev()}
+                            class="fa fa-chevron-circle-left"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+                    <span className="next">
+                        <i
+                            onClick={() => customSlider.current.slickNext()}
+                            class="fa fa-chevron-circle-right"
+                            aria-hidden="true"
+                        ></i>
+                    </span>
+                    <Slider
+                        ref={(slider) => (customSlider.current = slider)}
+                        className="slider-outer"
+                        {...settings}
+                    >
+                        {imagesList.map((img, i) => (
+                            <div key={i} className="slide">
+                                <i class={"fa" + ` ${img.icon}`} aria-hidden="true"></i>
                             </div>
                         ))}
-                    </div>
+                    </Slider>
                 </div>
             </div>
         </PartnerWrapper>
-
-    )
+    );
 }
-
