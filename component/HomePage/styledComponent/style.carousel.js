@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export default styled.div`
   .container-fluid {
+    position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -11,13 +12,12 @@ export default styled.div`
       height: 100vh;
       background-color: black;
       position: absolute;
-      top: 0;
+      top: 70px;
       opacity: 0;
       z-index: 1;
     }
     .overlay-text {
-      z-index: 3;
-      /* display: inline-block; */
+      z-index: 999;
       width: 100%;
       padding: 50px;
       background-color: rgba(68, 85, 90, 0.3);

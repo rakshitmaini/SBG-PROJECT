@@ -30,7 +30,7 @@ const ServicesInfo = [
 
 const Services = () => {
   return (
-    <>
+    <div>
       <ServicesWrapper>
         <div className="container-fluid">
           <div className="title">
@@ -40,6 +40,7 @@ const Services = () => {
           {ServicesInfo.map((s, index) => (
             <>
               <div
+                key={index}
                 className={s.align === "left" ? "row flex-row-reverse" : "row"}
               >
                 <div className="image-block col-md-6 col-sm-12 col-xs-12">
@@ -58,7 +59,7 @@ const Services = () => {
           ))}
         </div>
       </ServicesWrapper>
-    </>
+    </div>
   );
 };
 

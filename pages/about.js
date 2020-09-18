@@ -1,7 +1,12 @@
 import React from "react";
+import AboutUs from "../component/about-us";
 
-const about = () => {
-  return <div>About</div>;
+const About = () => {
+  return (
+    <>
+      <AboutUs />
+    </>
+  );
 };
 
-export default about;
+export default About;

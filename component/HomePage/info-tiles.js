@@ -20,7 +20,7 @@ const TilesData = [
 
 const InfoTiles = () => {
   return (
-    <>
+    <div>
       <InfoWrapper>
         <div className="container-fluid">
           <div className="title">
@@ -33,7 +33,7 @@ const InfoTiles = () => {
                 <div key={i} className="col-md-4 col-sm-12">
                   <div className="card">
                     <div className="card-image">
-                      <i class={"fa" + ` ${d.icon}`} aria-hidden="true"></i>
+                      <i className={"fa" + ` ${d.icon}`} aria-hidden="true"></i>
                     </div>
                     <div className="content">
                       <h2>{d.title}</h2>
@@ -46,7 +46,7 @@ const InfoTiles = () => {
           </div>
         </div>
       </InfoWrapper>
-    </>
+    </div>
   );
 };
 export default InfoTiles;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import variables from "../../../styles/variables";
 
 export default styled.div`
   .container-fluid {
@@ -34,7 +35,7 @@ export default styled.div`
           i {
             font-size: 60px;
             padding: 30px;
-            color: rgb(68, 85, 90);
+            color: ${variables.primary_color};
           }
         }
         .content {
