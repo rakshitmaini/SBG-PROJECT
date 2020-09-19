@@ -32,7 +32,7 @@ const Services = () => {
   return (
     <div>
       <ServicesWrapper>
-        <div className="container-fluid">
+        <div data-aos="fade-up" className="container-fluid">
           <div className="title">
             <h1>Services</h1>
             <h1>What We Do</h1>
@@ -40,7 +40,7 @@ const Services = () => {
           {ServicesInfo.map((s, index) => (
             <>
               <div
-                key={index}
+                key={s.count}
                 className={s.align === "left" ? "row flex-row-reverse" : "row"}
               >
                 <div className="image-block col-md-6 col-sm-12 col-xs-12">

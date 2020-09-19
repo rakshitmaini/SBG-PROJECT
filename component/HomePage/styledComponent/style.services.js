@@ -1,7 +1,9 @@
 import styled from "styled-components";
+import { fadeIn } from "../../../styles/animations";
 
 export default styled.div`
   .container-fluid {
+    /* animation: ${fadeIn} 3s ease-in; */
     margin: 0;
     padding: 0;
     width: 100%;

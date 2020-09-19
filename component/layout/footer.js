@@ -1,7 +1,13 @@
+import FooterWrapper from "./style.footer";
+
 const Footer = () => {
   return (
     <div>
-      <h1>footer</h1>
+      <FooterWrapper>
+        <div className="container-fluid">
+          &#169;2020 SHRI BALAJI GLOBAL PVT. LTD.
+        </div>
+      </FooterWrapper>
     </div>
   );
 };

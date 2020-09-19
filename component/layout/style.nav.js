@@ -4,31 +4,42 @@ import variables from "../../styles/variables";
 export default styled.div`
   div {
     width: 100%;
-    background-color: transparent;
     .nav-outer {
-      position: absolute;
+      background-color: rgba(240, 240, 240, 0.4);
+      border-radius: 30px;
+      width: 95%;
+      height: 70px;
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50.5%);
       z-index: 9999;
       padding: 10px 50px;
-      width: 100%;
       /* height: 70px; */
       display: flex;
       align-content: center;
-      justify-content: space-around;
-      .nav-logo {
+      justify-content: space-between;
+      .nav-logo img {
+        cursor: pointer;
+        width: 150px;
       }
       .nav-buttons {
-        background-color: rgba(240, 240, 240, 0.37);
-        box-shadow: 0 5px 15px gray;
+        font-size: 20px;
         color: black;
-        border-radius: 10px;
-        width: 500px;
+        max-width: 400px;
         display: flex;
-        font-weight: 600;
+        font-weight: 500;
         div {
+          text-align: center;
+          border-radius: 20px;
           /* width: 70px; */
           cursor: pointer;
-          margin: 0 15px;
-          line-height: 70px;
+          margin: 0;
+          line-height: 52px;
+        }
+        div:hover {
+          /* background-color: rgb(0, 0, 0, 0.1); */
+          color: #e05414;
         }
       }
     }
