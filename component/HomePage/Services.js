@@ -32,7 +32,7 @@ const Services = () => {
   return (
     <div>
       <ServicesWrapper>
-        <div data-aos="fade-up" className="container-fluid">
+        <div className="container-fluid">
           <div className="title">
             <h1>Services</h1>
             <h1>What We Do</h1>
