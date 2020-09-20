@@ -37,14 +37,18 @@ const Services = () => {
             <h1>Services</h1>
             <h1>What We Do</h1>
           </div>
-          {ServicesInfo.map((s, index) => (
+          {ServicesInfo.map((s) => (
             <>
               <div
                 key={s.count}
                 className={s.align === "left" ? "row flex-row-reverse" : "row"}
               >
                 <div className="image-block col-md-6 col-sm-12 col-xs-12">
-                  <img src={s.image} />
+                  <img
+                    data-aos="fade-left"
+                    data-aos-duration="3000"
+                    src={s.image}
+                  />
                 </div>
                 <div className="content-block col-md-6 col-sm-12 col-xs-12">
                   <div className="count">#{s.count}</div>
