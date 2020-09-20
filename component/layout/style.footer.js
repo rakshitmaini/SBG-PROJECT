@@ -112,4 +112,54 @@ export default styled.div`
     }
 
   }
+}
+  @media screen and (min-width: 576px) and (max-width : 776px){
+      .footer {
+        
+        .category{
+            ul{
+                a{
+                  padding: 3px 3px;
+                }
+            }
+        }
+        .acount-icon{
+            ul{
+                i{
+                    font-size:20px;
+                    span{
+                        padding-left:0rem;
+                    }
+                }
+            }
+            .fa{
+                margin-right:-59px;
+            }
+        }
+    .logo-img{
+        width: 150px;
+        margin-bottom:1rem;
+    }    
+  }
+
+  }
+  @media screen and (min-width: 777px) and (max-width : 991px){
+      .footer{
+          .category{
+              ul{
+                  a{
+                    padding: 5px 16px;
+                  }
+              }
+          }
+          }
+        .container {
+            width: 100%;
+            padding-right: 0px;
+            padding-left: 0px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+      }
+  }
 `;
