@@ -29,19 +29,22 @@ const InfoTiles = () => {
           </div>
           <div className="row">
             {TilesData.map((d, i) => (
-              <>
-                <div key={i} className="col-md-4 col-sm-12">
-                  <div className="card">
-                    <div className="card-image">
-                      <i className={"fa" + ` ${d.icon}`} aria-hidden="true"></i>
-                    </div>
-                    <div className="content">
-                      <h2>{d.title}</h2>
-                      <p>{d.info}</p>
-                    </div>
+              <div
+                key={i}
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                className="col-md-4 col-sm-12"
+              >
+                <div className="card">
+                  <div className="card-image">
+                    <i className={"fa" + ` ${d.icon}`} aria-hidden="true"></i>
+                  </div>
+                  <div className="content">
+                    <h2>{d.title}</h2>
+                    <p>{d.info}</p>
                   </div>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>

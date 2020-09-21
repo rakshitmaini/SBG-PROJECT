@@ -8,9 +8,9 @@ const HomePage = () => {
   return (
     <>
       <Carousel />
-      {/* <Team /> */}
       <Services />
       <InfoTiles />
+      <Team />
       <Partner />
     </>
   );
