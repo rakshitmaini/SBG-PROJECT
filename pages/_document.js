@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import AOS from "aos";
 
 class MyDocument extends Document {
   render() {

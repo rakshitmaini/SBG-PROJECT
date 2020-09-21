@@ -3,13 +3,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Layout from "../component/layout";
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
+import "aos/dist/aos.css";
 
 export const IsCSR = typeof window !== "undefined";
 function MyApp({ Component, pageProps }) {
+  console.log(typeof window);
   if (IsCSR) {
     AOS.init({
       once: true,
+      startEvent: "load",
     });
   }
   return (
