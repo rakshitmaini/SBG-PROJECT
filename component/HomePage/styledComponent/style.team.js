@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export default styled.div`
   .container-fluid {
+    position: relative;
     margin: auto;
     padding: 0;
     width: 100%;
@@ -16,6 +17,24 @@ export default styled.div`
         font-weight: 700;
         font-size: 40px;
       }
+    }
+    .prev-btn {
+      z-index: 99;
+      position: absolute;
+      left: 100px;
+      top: 200px;
+      width: 350px;
+      height: 450px;
+      background-color: transparent;
+    }
+    .next-btn {
+      z-index: 99;
+      position: absolute;
+      right: 100px;
+      top: 200px;
+      width: 350px;
+      height: 450px;
+      background-color: transparent;
     }
     .slick-slider {
       .slick-list {

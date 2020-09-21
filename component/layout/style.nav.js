@@ -5,7 +5,7 @@ export default styled.div`
   div {
     width: 100%;
     .nav-outer {
-      background-color: rgba(240, 240, 240, 0.4);
+      background-color: rgba(240, 240, 240, 1);
       border-radius: 30px;
       width: 95%;
       height: 70px;
