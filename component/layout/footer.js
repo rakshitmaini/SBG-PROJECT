@@ -69,7 +69,7 @@ const Footer = () => {
 
                   {
                     UsefulLinks.map((l) => (
-                      <Link href="#"><i class={l.style} aria-hidden="true">{l.tag}</i></Link>
+                      <Link href="#"><i class={l.style} aria-hidden="true"><span>{l.tag}</span></i></Link>
                     ))
                   }
 
@@ -87,15 +87,6 @@ const Footer = () => {
                     ))
                   }
 
-                  {/* <a href="#">men</a>
-                <a href="#">women</a>
-                <a href="#">boy</a>
-                <a href="#">girl</a>
-                <a href="#">Car</a>
-                <a href="#">teshart</a>
-                <a href="#">top</a>
-                <a href="#">glass</a>
-                <a href="#">baby dress</a> */}
                 </ul>
               </div>
             </div>
