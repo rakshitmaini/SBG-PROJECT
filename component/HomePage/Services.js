@@ -45,12 +45,16 @@ const Services = () => {
               >
                 <div className="image-block col-md-6 col-sm-12 col-xs-12">
                   <img
-                    data-aos="fade-left"
-                    data-aos-duration="3000"
+                    data-aos={s.align === "left" ? "fade-right" : "fade-left"}
+                    data-aos-duration="1000"
                     src={s.image}
                   />
                 </div>
-                <div className="content-block col-md-6 col-sm-12 col-xs-12">
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="content-block col-md-6 col-sm-12 col-xs-12"
+                >
                   <div className="count">#{s.count}</div>
                   <div>
                     <h3>{s.title}</h3>

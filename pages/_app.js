@@ -8,7 +8,9 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 export const IsCSR = typeof window !== "undefined";
 function MyApp({ Component, pageProps }) {
   if (IsCSR) {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   }
   return (
     <div style={{ position: "relative" }}>
