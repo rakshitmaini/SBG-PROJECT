@@ -1,20 +1,12 @@
 import AboutWrapper from "./style.about";
-
+import HeaderBanner from '../baseComponent/headerComponent/HeaderBanner'
 const AboutUs = () => {
   return (
     <div>
       <AboutWrapper>
         <div className="container-fluid">
-          <div className="header">
-            {/* <div className="header-image"> */}
-            <img src="/images/about-us.jpg" />
-            {/* </div> */}
-            <div className="overlay"></div>
-            <div className="title">
-              <h3>A few words</h3>
-              <h1>About Us</h1>
-            </div>
-          </div>
+          <HeaderBanner img="/aboutUsAssets/about-us.jpg" tag="About Us" />
+
           <div className="">
             <div className="section-outer row ">
               <div className="content  col-lg-6 col-md-12">

@@ -1,10 +1,10 @@
-import HeaderWrapper from "./style.nav";
+import NavWrapper from "./style.nav";
 import Link from "next/link";
 
 const Header = () => {
   return (
     <>
-      <HeaderWrapper>
+      <NavWrapper>
         <div>
           <div className="nav-outer">
             <div className="nav-logo">
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </HeaderWrapper>
+      </NavWrapper>
     </>
   );
 };

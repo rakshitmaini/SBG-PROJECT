@@ -61,7 +61,7 @@ export default styled.div`
     text-decoration: none;
     display: inline-block;
     color: #fff;
-    float: left;
+    /* float: left; */
     font-size: 25px;
     padding: 10px 10px;
 }
@@ -96,6 +96,13 @@ export default styled.div`
         .logo-img{
         width: 200px;
         margin-bottom:1rem;
+    }
+    .container{
+    padding-right: 15px;
+    padding-left: 15px;
+    p{
+        font-size:8px;
+    }
     }
     .social-icon{
 	
@@ -152,13 +159,17 @@ export default styled.div`
                   }
               }
           }
-          }
+          
         .container {
             width: 100%;
             padding-right: 0px;
             padding-left: 0px;
-            margin-right: auto;
-            margin-left: auto;
+            
+        }
+        .acount-icon{
+            .fa{
+                margin-right:20px;
+            }
         }
       }
   }

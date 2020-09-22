@@ -1,7 +1,14 @@
 import React from "react";
+import ContactUs from '../component/contact-us';
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <>
+      <ContactUs />
+      {/* <div>contact
+      </div> */}
+    </>
+  );
 };
 
 export default Contact;
