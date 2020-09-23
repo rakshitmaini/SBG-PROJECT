@@ -122,7 +122,7 @@ export default styled.div`
           width: 100% !important;
           input,
           textarea {
-            width: 250px !important;
+            width: 100% !important;
           }
         }
       }
