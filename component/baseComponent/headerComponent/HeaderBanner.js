@@ -1,22 +1,21 @@
-import React from 'react'
-import HeaderWrapper from './style.header';
+import React from "react";
+import HeaderWrapper from "./style.headerbanner";
 const HeaderBanner = (props) => {
-    return (
-        <>
-            <HeaderWrapper>
-                <div className="header">
+  return (
+    <>
+      <HeaderWrapper>
+        <div className="header">
+          <img src={props.img} />
 
-                    <img src={props.img} />
+          <div className="overlay"></div>
+          <div className="title">
+            <h3>{props.intro}</h3>
+            <h1>{props.tag}</h1>
+          </div>
+        </div>
+      </HeaderWrapper>
+    </>
+  );
+};
 
-                    <div className="overlay"></div>
-                    <div className="title">
-                        <h3>A few words</h3>
-                        <h1>{props.tag}</h1>
-                    </div>
-                </div>
-            </HeaderWrapper>
-        </>
-    )
-}
-
-export default HeaderBanner
+export default HeaderBanner;

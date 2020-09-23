@@ -1,11 +1,15 @@
 import AboutWrapper from "./style.about";
-import HeaderBanner from '../baseComponent/headerComponent/HeaderBanner'
+import HeaderBanner from "../baseComponent/headerComponent/HeaderBanner";
 const AboutUs = () => {
   return (
     <div>
       <AboutWrapper>
         <div className="container-fluid">
-          <HeaderBanner img="/aboutUsAssets/about-us.jpg" tag="About Us" />
+          <HeaderBanner
+            img="/aboutUsAssets/about-us.jpg"
+            tag="About Us"
+            intro="A few words"
+          />
 
           <div className="">
             <div className="section-outer row ">

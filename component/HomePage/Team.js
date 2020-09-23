@@ -8,28 +8,28 @@ const teamData = [
     profile: "",
     introLine:
       "lorem ipsum lorem ipsumlorem ipsumlorem lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ipsumlorem ipsumlorem ipsumlorem ipsum ",
-    src: "/images/sud.jpg",
+    src: "/aboutUsAssets/sud.jpg",
   },
   {
     name: "DEF",
     profile: "",
     introLine:
       "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ",
-    src: "/images/sud.jpg",
+    src: "/aboutUsAssets/sud.jpg",
   },
   {
     name: "GHI",
     profile: "",
     introLine:
       "lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum ",
-    src: "/images/sud.jpg",
+    src: "/aboutUsAssets/sud.jpg",
   },
   {
     name: "JKL",
     profile: "",
     introLine:
       "lorem lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum ",
-    src: "/images/sud.jpg",
+    src: "/aboutUsAssets/sud.jpg",
   },
 ];
 const settings = {
@@ -42,6 +42,17 @@ const settings = {
   speed: 10000,
   slidesToShow: 3,
   speed: 500,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        centerMode: false,
+        slidesToShow: 2,
+        // slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+  ],
 };
 const Team = () => {
   const customSlider = useRef();

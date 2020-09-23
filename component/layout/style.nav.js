@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import variables from "../../styles/variables";
+import { fadeIn } from "../../styles/animations";
 
 export default styled.div`
   div {
@@ -23,6 +24,9 @@ export default styled.div`
         cursor: pointer;
         width: 9.375rem;
       }
+      .nav-icon {
+        display: none;
+      }
       .nav-buttons {
         font-size: 1.25rem;
         color: black;
@@ -37,9 +41,13 @@ export default styled.div`
           margin: 0;
           line-height: 3.25rem;
         }
-        div:hover {
-          /* background-color: rgb(0, 0, 0, 0.1); */
-          color: #e05414;
+        .nav-icon {
+          display: block;
+          width: 27.44px;
+          float: right;
+          i {
+            line-height: 50px;
+          }
         }
       }
     }
