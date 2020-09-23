@@ -1,7 +1,12 @@
 import NavWrapper from "./style.nav";
 import Link from "next/link";
+import { useState } from "react";
 
 const Header = () => {
+  const [show, setshow] = useState(false);
+  const toggle = () => {
+    setshow((show) => !show);
+  };
   return (
     <>
       <NavWrapper>
@@ -13,19 +18,43 @@ const Header = () => {
               </Link>
             </div>
             <div className="nav-buttons">
-              <Link href="/">
-                <div>Home</div>
-              </Link>
-              <Link href="/about">
-                <div>About</div>
-              </Link>
-              <Link href="/contact">
-                <div>Contact</div>
-              </Link>
-              <Link href="/services">
-                <div>Services</div>
-              </Link>
+              <div>
+                <Link href="/">Home</Link>
+              </div>
+              <div>
+                <Link href="/about">About</Link>
+              </div>
+              <div>
+                <Link href="/contact">Contact</Link>
+              </div>
+              <div>
+                <Link href="/services">Services</Link>
+              </div>
             </div>
+            <div className="nav-icon">
+              <i
+                onClick={toggle}
+                class="fa fa-bars fa-2x"
+                aria-hidden="true"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div
+          style={show ? { display: "block" } : { display: "none" }}
+          className="overlay-btns"
+        >
+          <div>
+            <Link href="/">Home</Link>
+          </div>
+          <div>
+            <Link href="/about">About</Link>
+          </div>
+          <div>
+            <Link href="/contact">Contact</Link>
+          </div>
+          <div>
+            <Link href="/services">Services</Link>
           </div>
         </div>
       </NavWrapper>
