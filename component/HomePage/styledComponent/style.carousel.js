@@ -14,14 +14,14 @@ export default styled.div`
       height: 100vh;
       background-color: black;
       position: absolute;
-      top: 70px;
+      top: 4.375rem;
       opacity: 0;
       z-index: 1;
     }
     .overlay-text {
       z-index: 999;
       width: 100%;
-      padding: 50px;
+      padding: 3.125rem;
       background-color: rgba(68, 85, 90, 0.3);
       position: absolute;
       top: 60%;
@@ -30,7 +30,7 @@ export default styled.div`
       color: white;
       h1 {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 2.5rem;
       }
       h3 {
         font-weight: 500;
@@ -45,10 +45,10 @@ export default styled.div`
     .slick-dots {
       z-index: 2;
       position: absolute;
-      bottom: 40px;
+      bottom: 2.5rem;
       li {
-        width: 20px;
-        height: 20px;
+        width: 1.25rem;
+        height: 1.25rem;
         border-radius: 50%;
         background-color: whitesmoke;
       }
@@ -57,7 +57,7 @@ export default styled.div`
   @media screen and (max-width: 480px) {
     .overlay-text {
       h1 {
-        font-size: 30px;
+        font-size: 1.875rem;
       }
     }
   }

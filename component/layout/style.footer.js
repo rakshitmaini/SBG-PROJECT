@@ -3,57 +3,59 @@ import styled from "styled-components";
 export default styled.div`
 
 .footer {
-    padding: 50px 0 20px 0;
+    padding: 3.125rem 0rem 1.25rem 0rem;
     background-color: #090c14;
     color: #878c94;
 
     .title{
 	text-align: left;
 	color:#fff;
-	font-size:25px;
+	font-size:1.5625rem;
+    margin:0.7rem 0rem 0.7rem 0rem
     }
     .acount-icon{
         ul{
-            margin-left:0px;
-            padding-left:0px;
+            margin-left:0rem;
+            padding-left:0rem;
+            margin-bottom:0rem;
             i::before{
                 margin-right:1rem;
             }
             i{
 	display:block;
 	color:#fff;
-	font-size:21px;
-	padding: 7px 7px 7px 0px;
+	font-size:1.3125rem;
+	padding: 0.4375rem 0.4375rem 0.4375rem 0rem;
 	text-decoration:none;
     }
         }
         
     .fa{
-	margin-right:25px;
+	margin-right:1.5625rem;
     }
     }
     .category{
         ul {
-            margin-left:0px;
-            padding-left:0px;
+            margin-left:0rem;
+            padding-left:0rem;
             a {
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    padding: 5px 20px;
-    margin: 3px;
-    border-radius:4px;
-    margin-top: 6px;
+    padding: 0.3125rem 1.25rem;
+    margin: 0.1875rem;
+    border-radius:0.25rem;
+    margin-top: 0.375rem;
     background-color: black;
-    border: solid 1px #fff;
+    border: solid 0.0625rem #fff;
 }
         }
         
         
     }
     .payment{
-	margin:0px;
-	padding:0px;
+	margin:0rem;
+	padding:0rem;
 	list-style-type:none;
     li{
 	list-style-type:none;
@@ -62,20 +64,20 @@ export default styled.div`
     display: inline-block;
     color: #fff;
     /* float: left; */
-    font-size: 25px;
-    padding: 10px 10px;
+    font-size: 1.5625rem;
+    padding: 0.625rem 0.625rem;
 }
 }
 }
     .social-icon{
-	padding:0px;
-	margin:0px;
+	padding:0rem;
+	margin:0rem;
 
     i{
 	display:inline-block;
 	color:#fff;
-	font-size:25px;
-	padding-right:5px;
+	font-size:1.5625rem;
+	padding-right:0.3125rem;
     }
     }
     .text-center{
@@ -83,10 +85,10 @@ export default styled.div`
         text-align:center;
     }
     hr{
-        border-top: 2px solid #e9ecef;
+        border-top: 0.125rem solid #e9ecef;
     }
     .logo-img{
-        width: 200px;
+        width: 12.5rem;
         margin-bottom:1rem;
     }
 }
@@ -94,14 +96,14 @@ export default styled.div`
     .footer {
         
         .logo-img{
-        width: 200px;
+        width: 12.5rem;
         margin-bottom:1rem;
     }
     .container{
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
     p{
-        font-size:8px;
+        font-size:0.5rem;
     }
     }
     .social-icon{
@@ -110,8 +112,8 @@ export default styled.div`
     i{
 	display:inline-block;
 	color:#fff;
-	font-size:25px;
-	padding-right:17px;
+	font-size:1.5625rem;
+	padding-right:1.0625rem;
     }
     }
     .category ul{
@@ -126,25 +128,25 @@ export default styled.div`
         .category{
             ul{
                 a{
-                  padding: 3px 3px;
+                  padding: 0.1875rem 0.1875rem;
                 }
             }
         }
         .acount-icon{
             ul{
                 i{
-                    font-size:20px;
+                    font-size:1.25rem;
                     span{
                         padding-left:0rem;
                     }
                 }
             }
             .fa{
-                margin-right:-59px;
+                margin-right:-3.6875rem;
             }
         }
     .logo-img{
-        width: 150px;
+        width: 9.375rem;
         margin-bottom:1rem;
     }    
   }
@@ -155,20 +157,20 @@ export default styled.div`
           .category{
               ul{
                   a{
-                    padding: 5px 16px;
+                    padding: 0.3125rem 1rem;
                   }
               }
           }
           
         .container {
             width: 100%;
-            padding-right: 0px;
-            padding-left: 0px;
+            padding-right: 0rem;
+            padding-left: 0rem;
             
         }
         .acount-icon{
             .fa{
-                margin-right:20px;
+                margin-right:1.25rem;
             }
         }
       }

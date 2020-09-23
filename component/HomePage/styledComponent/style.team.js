@@ -21,53 +21,53 @@ export default styled.div`
     .prev-btn {
       z-index: 99;
       position: absolute;
-      left: 100px;
-      top: 200px;
-      width: 350px;
-      height: 450px;
+      left: 6.25rem;
+      top: 12.5rem;
+      width: 21.875rem;
+      height: 28.125rem;
       background-color: transparent;
     }
     .next-btn {
       z-index: 99;
       position: absolute;
-      right: 100px;
-      top: 200px;
-      width: 350px;
-      height: 450px;
+      right: 6.25rem;
+      top: 12.5rem;
+      width: 21.875rem;
+      height: 28.125rem;
       background-color: transparent;
     }
     .slick-slider {
       .slick-list {
-        margin: 100px auto;
+        margin: 6.25rem auto;
         text-align: center;
         .slick-track {
           .slick-slide {
             /* width: 33%; */
-            padding: 10px 50px;
+            padding: 0.625rem 3.125rem;
             .card-outer {
               opacity: 0.3;
-              padding: 50px 20px;
+              padding: 3.125rem 1.25rem;
               background-color: whitesmoke;
-              border-radius: 30px;
+              border-radius: 1.875rem;
               width: 100%;
               .card-inner {
                 text-align: center;
-                width: 400px;
+                width: 25rem;
                 max-width: 100%;
                 .card-image {
                   img {
-                    width: 150px;
+                    width: 9.375rem;
                     margin: auto;
                     border-radius: 50%;
                   }
                 }
                 .card-content {
-                  margin: 30px 0;
+                  margin: 1.875rem 0;
                   p {
-                    font-size: 15px;
+                    font-size: 0.9375rem;
                   }
                   h2 {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     font-weight: 600;
                   }
                 }
@@ -78,7 +78,7 @@ export default styled.div`
             -webkit-transform: scale(1.25);
             -moz-transform: scale(1.25);
             transform: scale(1.1) !important;
-            padding: 20px;
+            padding: 1.25rem;
             .card-outer {
               opacity: 1 !important;
               background-color: whitesmoke;
@@ -87,7 +87,7 @@ export default styled.div`
               .card-inner {
                 /* padding: 30px 10px; */
                 text-align: center;
-                width: 400px;
+                width: 25rem;
                 max-width: 100%;
                 .card-image {
                   img {
@@ -96,12 +96,12 @@ export default styled.div`
                   }
                 }
                 .card-content {
-                  margin: 30px 0;
+                  margin: 1.875rem 0;
                   p {
-                    font-size: 15px;
+                    font-size: 0.9375rem;
                   }
                   h2 {
-                    font-size: 20px;
+                    font-size: 1.25rem;
                     font-weight: 600;
                   }
                 }
@@ -114,7 +114,7 @@ export default styled.div`
     .card-outer {
       text-align: center;
       .card-inner {
-        width: 400px;
+        width: 25rem;
       }
     }
   }

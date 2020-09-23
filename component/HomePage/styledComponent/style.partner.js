@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export default styled.div`
   .container-fluid {
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
     text-align: center;
     .title {
       h1 {
-        padding: 100px 0 70px 0;
+        padding: 6.25rem 0rem 4.375rem 0rem;
         text-align: center;
-        font-size: 40px;
+        font-size: 2.5rem;
         font-weight: 700;
       }
     }
@@ -19,14 +19,14 @@ export default styled.div`
       .prev {
         position: absolute;
         top: 50%;
-        left: -10px;
+        left: -0.625rem;
         transform: translateY(-50%);
       }
       .next {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: -10px;
+        right: -0.625rem;
       }
       .slider-outer {
         max-width: 100%;
@@ -38,19 +38,19 @@ export default styled.div`
           .slick-track {
             text-align: center;
             .slick-slide {
-              padding: 0 10px;
+              padding: 0 0.625rem;
 
               display: inline-block;
               text-align: center;
               .slide {
-                padding: 40px;
-                width: 120px !important;
-                height: 120px;
+                padding: 2.5rem;
+                width: 7.5rem !important;
+                height: 7.5rem;
                 background-color: whitesmoke;
                 border: none;
-                border-radius: 20px;
+                border-radius: 1.25rem;
                 i {
-                  font-size: 40px;
+                  font-size: 2.5rem;
                 }
               }
             }

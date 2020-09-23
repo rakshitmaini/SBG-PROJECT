@@ -10,41 +10,41 @@ export default styled.div`
     text-align: center;
     /* padding: 0 50px; */
     .title {
-      padding-top: 100px;
-      margin-top: 50px;
+      padding-top: 6.25rem;
+      margin-top: 3.125rem;
       h1 {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 1.875rem;
       }
       h1:last-of-type {
-        font-size: 40px;
+        font-size: 2.5rem;
       }
     }
     .row {
-      padding-bottom: 100px;
+      padding-bottom: 6.25rem;
       .card {
         margin: auto;
-        margin-top: 70px;
-        padding: 40px;
-        width: 350px;
+        margin-top: 4.375rem;
+        padding: 2.5rem;
+        width: 21.875rem;
         max-width: 95%;
         border: none;
-        border-radius: 30px;
+        border-radius: 1.875rem;
         background-color: rgba(250, 250, 250, 1);
         .card-image {
           i {
-            font-size: 60px;
-            padding: 30px;
+            font-size: 3.75rem;
+            padding: 1.875rem;
             color: ${variables.primary_color};
           }
         }
         .content {
           h2 {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: 700;
           }
           p {
-            font-size: 15px;
+            font-size: 0.9375rem;
           }
         }
       }
@@ -53,7 +53,7 @@ export default styled.div`
   @media (min-width: 1200px) {
     .container-fluid {
       .row {
-        margin: 0px 130px;
+        margin: 0rem 8.125rem;
       }
     }
   }

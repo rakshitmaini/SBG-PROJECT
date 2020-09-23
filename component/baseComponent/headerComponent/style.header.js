@@ -5,7 +5,7 @@ export default styled.div`
       position: relative;
       .overlay {
         width: 100%;
-        height: 400px;
+        height: 25rem;
         background-color: rgba(0, 0, 0, 0.3);
         z-index: 1;
         position: absolute;
@@ -13,23 +13,23 @@ export default styled.div`
       }
       img {
         /* max-height: 500px; */
-        height: 400px;
+        height: 25rem;
         display: block;
       }
       .title {
         z-index: 2;
         position: absolute;
-        top: 280px;
-        left: 80px;
+        top: 17.5rem;
+        left: 5rem;
         h1 {
           font-weight: 700;
-          font-size: 55px;
+          font-size: 3.4375rem;
           color: white;
         }
         h3 {
           color: ${variables.primary_color};
           font-weight: 700;
-          font-size: 25px;
+          font-size: 1.5625rem;
         }
       }
     }
