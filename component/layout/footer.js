@@ -47,29 +47,29 @@ const locationLinks = [
 const Footer = () => {
   return (
     <FooterWrapper>
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-4">
-              <img src='/Asset 3.png' alt="" class="logo-img" />
+      <footer className="footer">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-4">
+              <img src='/Asset 3.png' alt="" className="logo-img" />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit, libero a molestie consectetur, sapien elit lacinia mi.</p>
-              <ul class="social-icon">
-                <Link href="#" class="social"><i class="fa fa-facebook" aria-hidden="true"></i></Link>
-                <Link href="#" class="social"><i class="fa fa-twitter" aria-hidden="true"></i></Link>
-                <Link href="#" class="social"><i class="fa fa-instagram" aria-hidden="true"></i></Link>
-                <Link href="#" class="social"><i class="fa fa-youtube-play" aria-hidden="true"></i></Link>
-                <Link href="#" class="social"><i class="fa fa-google" aria-hidden="true"></i></Link>
+              <ul className="social-icon">
+                <Link href="#" className="social"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
+                <Link href="#" className="social"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
+                <Link href="#" className="social"><i className="fa fa-instagram" aria-hidden="true"></i></Link>
+                <Link href="#" className="social"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link>
+                <Link href="#" className="social"><i className="fa fa-google" aria-hidden="true"></i></Link>
 
               </ul>
             </div>
-            <div class="col-sm-4">
-              <h4 class="title">Useful Links</h4>
-              <span class="acount-icon">
+            <div className="col-sm-4">
+              <h4 className="title">Useful Links</h4>
+              <span className="acount-icon">
                 <ul>
 
                   {
                     UsefulLinks.map((l) => (
-                      <Link href="#"><i class={l.style} aria-hidden="true"><span>{l.tag}</span></i></Link>
+                      <Link href="#"><i className={l.style} aria-hidden="true"><span>{l.tag}</span></i></Link>
                     ))
                   }
 
@@ -77,9 +77,9 @@ const Footer = () => {
                 </ul>
               </span>
             </div>
-            <div class="col-sm-4">
-              <h4 class="title">Available at</h4>
-              <div class="category">
+            <div className="col-sm-4">
+              <h4 className="title">Available at</h4>
+              <div className="category">
                 <ul>
                   {
                     locationLinks.map((ll) => (
@@ -93,7 +93,7 @@ const Footer = () => {
 
           </div>
           <hr />
-          <div class="row text-center"><a href="http://lacodeid.com/" style={{ color: '#fff' }}>Copyright © Your Website lacodeid 2017</a></div>
+          <div className="row text-center"><a href="http://lacodeid.com/" style={{ color: '#fff' }}>Copyright © Your Website lacodeid 2017</a></div>
         </div>
       </footer>
     </FooterWrapper>

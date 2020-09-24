@@ -9,13 +9,13 @@ export default styled.div`
     text-align: center;
     .title {
       h1:first-of-type {
-        margin-top: 100px;
+        margin-top: 6.25rem;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 1.875rem;
       }
       h1:last-of-type {
         font-weight: 700;
-        font-size: 40px;
+        font-size: 2.5rem;
       }
     }
     .prev-btn {
@@ -85,7 +85,7 @@ export default styled.div`
               border-radius: 0;
               width: 100%;
               .card-inner {
-                /* padding: 30px 10px; */
+                
                 text-align: center;
                 width: 25rem;
                 max-width: 100%;

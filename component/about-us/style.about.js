@@ -10,7 +10,7 @@ export default styled.div`
     width: 100%;
     
     .section-outer {
-      padding: 50px 80px;
+      padding: 3.125rem 3.125rem;
       .content {
         text-align: left;
         p:first-of-type {
@@ -18,28 +18,28 @@ export default styled.div`
         }
         h2 {
           font-weight: 700;
-          font-size: 35px;
+          font-size: 2.1875rem;
         }
         h4 {
           font-weight: 700;
-          font-size: 20px;
-          margin: 30px 0;
+          font-size: 1.25rem;
+          margin: 1.875rem 0;
         }
         p:last-of-type {
           font-weight: 400;
         }
       }
       .section-image {
-        padding: 20px 50px;
+        padding: 1.25rem 3.125rem;
         text-align: center;
         img {
-          width: 400px;
+          width: 25rem;
           max-width: 100%;
           overflow: hidden;
-          padding: 0px 10px;
+          padding: 0rem 0.625rem;
           /* border: 0.01px solid gray; */
-          border-radius: 35px;
-          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+          border-radius: 2.1875rem;
+          box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
         }
       }
     }
@@ -59,10 +59,9 @@ export default styled.div`
     .section-outer .section-image {
       text-align: center;
       div {
-        padding: 0px 10px;
-        /* border: 0.01px solid gray; */
-        border-radius: 35px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 0rem 0.625rem;
+        border-radius: 2.1875rem;
+        box-shadow: 0.125rem 0.125rem 0.625rem rgba(0, 0, 0, 0.1);
         img {
           padding: 0 !important;
           border-radius: none !important;

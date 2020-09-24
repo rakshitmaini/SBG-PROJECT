@@ -1,5 +1,14 @@
-const Services = () => {
-  return <div>Services</div>;
+import React from "react";
+import ServicesPage from '../component/services';
+
+const Service = () => {
+  return (
+    <>
+      <ServicesPage />
+      {/* <div>contact
+      </div> */}
+    </>
+  );
 };
 
-export default Services;
+export default Service;

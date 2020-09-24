@@ -4,12 +4,13 @@ body {
   -webkit-overflow-scrolling: touch;
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat',sans-serif;
+  font-family: 'Montserrat', sans-serif !important;
   /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, */
-    /* Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
-   
+  /* Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+
 }
-::selection{
+
+::selection {
   color: white;
   background-color: #fda379;
 }
@@ -17,13 +18,15 @@ body {
 
 
 @media screen and (max-width: 480px) {
-  .overlay-text{
-    padding:20px !important;
+  .overlay-text {
+    padding: 1.25rem !important;
   }
+
   .overlay-text h1 {
-      font-size: 25px !important;
+    font-size: 1.5625rem !important;
   }
-  .overlay-text h3{
-    font-size: 15px;
+
+  .overlay-text h3 {
+    font-size: 0.9375rem;
   }
 }

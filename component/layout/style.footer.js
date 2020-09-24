@@ -138,6 +138,7 @@ export default styled.div`
                     font-size:1.25rem;
                     span{
                         padding-left:0rem;
+                        font-family:sans-serif !important;
                     }
                 }
             }
