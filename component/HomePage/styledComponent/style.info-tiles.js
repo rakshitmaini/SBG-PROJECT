@@ -10,7 +10,7 @@ export default styled.div`
     text-align: center;
     /* padding: 0 50px; */
     .title {
-      padding-top: 0.25rem;
+      padding-top: 2.25rem;
       margin-top: 3.125rem;
       h1 {
         font-weight: 700;

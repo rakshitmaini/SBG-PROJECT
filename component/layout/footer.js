@@ -3,25 +3,25 @@ import Link from "next/link";
 
 const UsefulLinks = [
   {
-    tag: "Life Insurance",
-    path: "",
-    style: "fa fa-heart",
+    tag: 'Life Insurance',
+    path: '/services',
+    style: 'fa fa-heart'
   },
   {
-    tag: "Motor Insurance",
-    path: "",
-    style: "fa fa-motorcycle",
+    tag: 'Motor Insurance',
+    path: '/services',
+    style: 'fa fa-motorcycle'
   },
   {
-    tag: "Medi- Claim",
-    path: "",
-    style: "fa fa-medkit",
+    tag: 'Medi- Claim',
+    path: '/services',
+    style: 'fa fa-medkit'
   },
   {
-    tag: "FAQs",
-    path: "",
-    style: "fa fa-question-circle",
-  },
+    tag: 'FAQs',
+    path: '/faqs',
+    style: 'fa fa-question-circle'
+  }
 ];
 const locationLinks = [
   {
@@ -77,13 +77,14 @@ const Footer = () => {
               <h4 className="title">Useful Links</h4>
               <span className="acount-icon">
                 <ul>
-                  {UsefulLinks.map((l) => (
-                    <Link href="#">
-                      <i className={l.style} aria-hidden="true">
-                        <span>{l.tag}</span>
-                      </i>
-                    </Link>
-                  ))}
+
+                  {
+                    UsefulLinks.map((l) => (
+                      <Link href={l.path}><i className={l.style} aria-hidden="true"><span>{l.tag}</span></i></Link>
+                    ))
+                  }
+
+
                 </ul>
               </span>
             </div>

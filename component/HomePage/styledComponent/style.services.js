@@ -14,7 +14,8 @@ export default styled.div`
       .py-4{
       p{
         line-height:2;
-        color:black;
+        font-size:1.3rem;
+        color:black !important;
       }
       .service-tag{
         color:#e05414;

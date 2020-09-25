@@ -5,8 +5,7 @@ const Service = () => {
   return (
     <>
       <ServicesPage />
-      {/* <div>contact
-      </div> */}
+
     </>
   );
 };
