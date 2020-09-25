@@ -15,13 +15,13 @@ const ContactUs = () => {
   };
   return (
     <>
-      <HeaderBanner
-        img="/contactUsAssets/contact-us.jpg"
-        tag="Contact Us"
-        intro="Have some Questions ?"
-      />
       <ContactWrapper>
         <div className="container-fluid">
+          <HeaderBanner
+            img="/contactUsAssets/contact-us.jpg"
+            tag="Contact Us"
+            intro="Have some Questions ?"
+          />
           <div className="contact-outer">
             <h1>Contact our Support and Sales Team</h1>
             <h3>Need to get in touch with team? We're all ears.</h3>

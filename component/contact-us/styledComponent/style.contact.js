@@ -1,9 +1,13 @@
 import styled from "styled-components";
 import variables from "../../../styles/variables";
+import { fadeIn } from "../../../styles/animations";
 
 export default styled.div`
   .container-fluid {
+    animation: ${fadeIn} 0.3s ease-in;
     padding: 0;
+    margin: 0;
+    width: 100%;
     .contact-outer {
       margin: 50px auto;
       h1 {

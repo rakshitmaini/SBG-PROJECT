@@ -4,11 +4,11 @@ import { fadeIn } from "../../styles/animations";
 
 export default styled.div`
   .container-fluid {
-    animation: ${fadeIn} 0.7s ease-in;
+    animation: ${fadeIn} 0.3s ease-in;
     margin: 0;
     padding: 0;
     width: 100%;
-    
+
     .section-outer {
       padding: 3.125rem 3.125rem;
       .content {
