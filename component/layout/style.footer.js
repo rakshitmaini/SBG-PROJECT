@@ -6,7 +6,9 @@ export default styled.div`
     padding: 3.125rem 0rem 1.25rem 0rem;
     background-color: #090c14;
     color: #878c94;
-
+    p{
+        font-size:1rem;
+    }
     .title{
 	text-align: left;
 	color:#fff;
@@ -27,6 +29,9 @@ export default styled.div`
 	font-size:1.3125rem;
 	padding: 0.4375rem 0.4375rem 0.4375rem 0rem;
 	text-decoration:none;
+    span{
+        font-size:1.2rem;
+    }
     }
         }
         
@@ -44,6 +49,7 @@ export default styled.div`
     display: inline-block;
     padding: 0.3125rem 1.25rem;
     margin: 0.1875rem;
+    font-size:0.8rem;
     border-radius:0.25rem;
     margin-top: 0.375rem;
     background-color: black;
@@ -129,6 +135,7 @@ export default styled.div`
             ul{
                 a{
                   padding: 0.1875rem 0.1875rem;
+                  font-size:0.8rem;
                 }
             }
         }
@@ -138,6 +145,7 @@ export default styled.div`
                     font-size:1.25rem;
                     span{
                         padding-left:0rem;
+                        font-size:1rem;
                         font-family:sans-serif !important;
                     }
                 }
@@ -158,7 +166,7 @@ export default styled.div`
           .category{
               ul{
                   a{
-                    padding: 0.3125rem 1rem;
+                    padding: 0.3125rem;
                   }
               }
           }

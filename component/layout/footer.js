@@ -4,17 +4,17 @@ import Link from "next/link";
 const UsefulLinks = [
   {
     tag: 'Life Insurance',
-    path: '/services',
+    path: '/services#life',
     style: 'fa fa-heart'
   },
   {
     tag: 'Motor Insurance',
-    path: '/services',
+    path: '/services#motor',
     style: 'fa fa-motorcycle'
   },
   {
     tag: 'Medi- Claim',
-    path: '/services',
+    path: '/services#medical',
     style: 'fa fa-medkit'
   },
   {
@@ -31,17 +31,29 @@ const locationLinks = [
     tag: "Jaipur",
   },
   {
-    tag: "Rajasthan",
+    tag: "Odisha",
   },
   {
-    tag: "Mumbai",
+    tag: "West Bengal",
   },
   {
-    tag: "Banglore",
+    tag: "Kolkata",
   },
   {
-    tag: "Lucknow",
+    tag: "Nagpur",
   },
+  {
+    tag: "Maharashtra",
+  },
+  {
+    tag: "Ranchi",
+  },
+  {
+    tag: "Agra",
+  },
+  {
+    tag: "Pune",
+  }
 ];
 const Footer = () => {
   return (

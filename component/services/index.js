@@ -5,6 +5,7 @@ import HeaderBanner from '../baseComponent/headerComponent/HeaderBanner';
 const ServicesInfo = [
     {
         title: "Life Insurance",
+        id: 'life',
         info:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
         align: "right",
@@ -13,6 +14,7 @@ const ServicesInfo = [
     },
     {
         title: "Medical Insurance",
+        id: 'medical',
         info:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
         align: "left",
@@ -21,6 +23,7 @@ const ServicesInfo = [
     },
     {
         title: "Motor Insurance",
+        id: 'motor',
         info:
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
         align: "right",
@@ -45,7 +48,7 @@ const ServicesPage = () => {
                                 key={s.count}
                                 className={s.align === "left" ? "row flex-row-reverse" : "row"}
                             >
-                                <div className="image-block col-md-6 col-sm-12 col-xs-12">
+                                <div className="image-block col-md-6 col-sm-12 col-xs-12" id={s.id}>
                                     <img
                                         data-aos={s.align === "left" ? "fade-right" : "fade-left"}
                                         data-aos-duration="1000"
