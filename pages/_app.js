@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 
 export const IsCSR = typeof window !== "undefined";
 function MyApp({ Component, pageProps }) {
-  console.log(typeof window);
   if (IsCSR) {
     AOS.init({
       once: true,

@@ -5,13 +5,16 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prod": "next export"
   },
   "dependencies": {
     "@babel/plugin-proposal-decorators": "^7.10.5",
     "@material-ui/core": "^4.11.0",
     "aos": "2.3.4",
+    "firebase": "^7.21.1",
     "fontfaceobserver": "^2.1.0",
+    "gatsby-plugin-styled-components": "^3.3.12",
     "mobile-detect": "^1.4.4",
     "next": "9.5.3",
     "react": "16.13.1",

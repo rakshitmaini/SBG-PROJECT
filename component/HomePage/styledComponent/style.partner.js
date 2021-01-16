@@ -39,7 +39,6 @@ export default styled.div`
             text-align: center;
             .slick-slide {
               padding: 0 0.625rem;
-
               display: inline-block;
               text-align: center;
               .slide {
@@ -59,6 +58,11 @@ export default styled.div`
       }
     }
   }
-  @media (max-width: 930px) {
+  @media (max-width: 885px) {
+    .slider-outer {
+      .slick-list {
+        width: calc(140 * 4px) !important;
+      }
+    }
   }
 `;

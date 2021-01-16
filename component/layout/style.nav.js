@@ -15,7 +15,7 @@ export default styled.div`
       left: 50%;
       transform: translateX(-50.5%);
       z-index: 9999;
-      padding: 0.625rem 3.125rem;
+      padding: 10px 3.125rem;
       /* height: 70px; */
       display: flex;
       align-content: center;
@@ -34,12 +34,17 @@ export default styled.div`
         display: flex;
         font-weight: 500;
         div {
+          color: #e05414;
           text-align: center;
           border-radius: 1.25rem;
           /* width: 70px; */
           cursor: pointer;
           margin: 0;
           line-height: 3.25rem;
+          a {
+            text-decoration: none;
+            color: #e05414;
+          }
         }
         .nav-icon {
           display: block;
@@ -49,6 +54,54 @@ export default styled.div`
             line-height: 50px;
           }
         }
+      }
+    }
+  }
+  .overlay-btns {
+    display: none;
+  }
+  @media screen and (max-width: 776px) {
+    div {
+      .nav-outer {
+        .nav-icon {
+          display: flex;
+          width: auto;
+          i {
+            line-height: 50px;
+          }
+        }
+        .nav-buttons {
+          display: none;
+        }
+      }
+    }
+    .overlay-btns {
+      position: fixed;
+      display: block;
+      background-color: rgba(240, 240, 240, 1);
+      z-index: 9999;
+      top: 90px;
+      right: 50px;
+      width: 200px;
+      border: 0.3px solid rgb(255, 176, 0);
+      .up {
+        position: absolute;
+        top: -21px;
+
+        color: rgba(240, 240, 240, 1);
+        left: 160px;
+      }
+      .page-links {
+        a {
+          padding: 5px 10px;
+          display: block;
+          text-decoration: none;
+          width: 100%;
+          color: #e05414;
+        }
+      }
+      .page-links:hover {
+        background-color: rgba(250, 250, 250, 1);
       }
     }
   }

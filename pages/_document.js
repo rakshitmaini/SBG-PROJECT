@@ -5,7 +5,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>SHRI BALAJI GLOBAL</title>
           <link rel="icon" href="/1x/Asset 2.png" />
           <link
             rel="stylesheet"

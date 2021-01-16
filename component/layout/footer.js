@@ -3,25 +3,25 @@ import Link from "next/link";
 
 const UsefulLinks = [
   {
-    tag: 'Life Insurance',
-    path: '/services#life',
-    style: 'fa fa-heart'
+    tag: "Life Insurance",
+    path: "/services#life",
+    style: "fa fa-heart",
   },
   {
-    tag: 'Motor Insurance',
-    path: '/services#motor',
-    style: 'fa fa-motorcycle'
+    tag: "Motor Insurance",
+    path: "/services#motor",
+    style: "fa fa-motorcycle",
   },
   {
-    tag: 'Medi- Claim',
-    path: '/services#medical',
-    style: 'fa fa-medkit'
+    tag: "Medi- Claim",
+    path: "/services#medical",
+    style: "fa fa-medkit",
   },
   {
-    tag: 'FAQs',
-    path: '/faqs',
-    style: 'fa fa-question-circle'
-  }
+    tag: "FAQs",
+    path: "/faqs",
+    style: "fa fa-question-circle",
+  },
 ];
 const locationLinks = [
   {
@@ -53,7 +53,7 @@ const locationLinks = [
   },
   {
     tag: "Pune",
-  }
+  },
 ];
 const Footer = () => {
   return (
@@ -89,14 +89,13 @@ const Footer = () => {
               <h4 className="title">Useful Links</h4>
               <span className="acount-icon">
                 <ul>
-
-                  {
-                    UsefulLinks.map((l) => (
-                      <Link href={l.path}><i className={l.style} aria-hidden="true"><span>{l.tag}</span></i></Link>
-                    ))
-                  }
-
-
+                  {UsefulLinks.map((l) => (
+                    <Link key={l.path} href={l.path}>
+                      <i className={l.style} aria-hidden="true">
+                        <span>{l.tag}</span>
+                      </i>
+                    </Link>
+                  ))}
                 </ul>
               </span>
             </div>
@@ -105,7 +104,9 @@ const Footer = () => {
               <div className="category">
                 <ul>
                   {locationLinks.map((ll) => (
-                    <Link href="#">{ll.tag}</Link>
+                    <Link key={ll.tag} href="#">
+                      {ll.tag}
+                    </Link>
                   ))}
                 </ul>
               </div>
@@ -113,7 +114,7 @@ const Footer = () => {
           </div>
           <hr />
           <div className="text-center">
-            Copyright © 2020 SHRI BALAJI GLOBAL PRIVATE LIMITED
+            Copyright © 2021 SHRI BALAJI GLOBAL PRIVATE LIMITED
           </div>
         </div>
       </footer>

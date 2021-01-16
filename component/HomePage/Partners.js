@@ -10,6 +10,20 @@ const settings = {
   autoplay: true,
   slidesToShow: 6,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 885,
+      settings: {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplaySpeed: 3000,
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 };
 
 const imagesList = [

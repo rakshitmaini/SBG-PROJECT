@@ -8,28 +8,28 @@ const teamData = [
     profile: "",
     introLine:
       "lorem ipsum lorem ipsumlorem ipsumlorem lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ipsumlorem ipsumlorem ipsumlorem ipsum ",
-    src: "/aboutUsAssets/sud.jpg",
+    src: "/aboutUsAssets/avatar.jpg",
   },
   {
     name: "DEF",
     profile: "",
     introLine:
       "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ",
-    src: "/aboutUsAssets/sud.jpg",
+    src: "/aboutUsAssets/avatar.jpg",
   },
   {
     name: "GHI",
     profile: "",
     introLine:
       "lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum ",
-    src: "/aboutUsAssets/sud.jpg",
+    src: "/aboutUsAssets/avatar.jpg",
   },
   {
     name: "JKL",
     profile: "",
     introLine:
       "lorem lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum ",
-    src: "/aboutUsAssets/sud.jpg",
+    src: "/aboutUsAssets/avatar.jpg",
   },
 ];
 const settings = {
@@ -76,8 +76,8 @@ const Team = () => {
             ref={(slider) => (customSlider.current = slider)}
             {...settings}
           >
-            {teamData.map((t) => (
-              <div className="col-sm-12 card-outer">
+            {teamData.map((t, i) => (
+              <div key={i} className="col-sm-12 card-outer">
                 <div className="card-inner">
                   <div className="card-image">
                     <img src={t.src} />

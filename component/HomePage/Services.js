@@ -33,41 +33,52 @@ const Services = () => {
     <>
       <ServicesWrapper>
         <div className="container-fluid">
-          <div class="row services-main flex justify-content-between">
-
-            <div class="col-md-5 services-left">
-              <div class="py-4">
-                <span class="text-secondary text-uppercase">services</span>
-                <h1 class="text-capitalize font-weight-bold my-3">Our <span className="service-tag">Services</span></h1>
-                <p class="text-secondary" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, ea atque reiciendis saepe et similique eveniet distinctio autem odit blanditiis. </p>
-                <p class="text-secondary" > consequatur nesciunt doloribus ad sit reprehenderit, beatae error illo aut!</p>
+          <div className="row services-main flex justify-content-between">
+            <div className="col-md-5 services-left">
+              <div className="py-4">
+                <span className="text-secondary text-uppercase">services</span>
+                <h1 className="text-capitalize font-weight-bold my-3">
+                  Our <span className="service-tag">Services</span>
+                </h1>
+                <p className="text-secondary">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam, ea atque reiciendis saepe et similique eveniet
+                  distinctio autem odit blanditiis.{" "}
+                </p>
+                <p className="text-secondary">
+                  {" "}
+                  consequatur nesciunt doloribus ad sit reprehenderit, beatae
+                  error illo aut!
+                </p>
               </div>
             </div>
-            <div class="col-md-6 services-right">
-
-              <div class="row">
-
-                {ServicesInfo.map((s) => (
-                  <div className={s.align === "top" ? "col-md-6 p-2 text-center" : "col-md-12 p-2 text-center"} >
-                    <div class=" px-3 py-5">
-
-                      <div class="mt-3">
+            <div className="col-md-6 services-right">
+              <div className="row">
+                {ServicesInfo.map((s, i) => (
+                  <div
+                    key={i}
+                    className={
+                      s.align === "top"
+                        ? "col-md-6 p-2 text-center"
+                        : "col-md-12 p-2 text-center"
+                    }
+                  >
+                    <div className=" px-3 py-5">
+                      <div className="mt-3">
                         <div className="service-img">
                           <img src={s.image} alt="" />
                         </div>
-                        <h5 class="mb-2" ><a href="#" class="stretched-link">{s.title}</a></h5>
-
+                        <h5 className="mb-2">
+                          <a href="#" className="stretched-link">
+                            {s.title}
+                          </a>
+                        </h5>
                       </div>
                     </div>
                   </div>
                 ))}
-
-
-
               </div>
-
             </div>
-
           </div>
         </div>
       </ServicesWrapper>

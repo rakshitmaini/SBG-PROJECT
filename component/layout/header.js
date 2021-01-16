@@ -34,27 +34,35 @@ const Header = () => {
             <div className="nav-icon">
               <i
                 onClick={toggle}
-                class="fa fa-bars fa-2x"
+                className="fa fa-bars fa-2x"
                 aria-hidden="true"
               ></i>
             </div>
           </div>
         </div>
-        <div
-          style={show ? { display: "block" } : { display: "none" }}
-          className="overlay-btns"
-        >
-          <div>
-            <Link href="/">Home</Link>
+        <div style={show ? {} : { display: "none" }} className="overlay-btns">
+          <div className="up">
+            <i className="fa fa-2x fa-caret-up" aria-hidden="true"></i>
           </div>
-          <div>
-            <Link href="/about">About</Link>
+          <div className="page-links">
+            <Link href="/">
+              <a onClick={toggle}>Home</a>
+            </Link>
           </div>
-          <div>
-            <Link href="/contact">Contact</Link>
+          <div className="page-links">
+            <Link href="/about">
+              <a onClick={toggle}>About</a>
+            </Link>
           </div>
-          <div>
-            <Link href="/services">Services</Link>
+          <div className="page-links">
+            <Link href="/contact">
+              <a onClick={toggle}>Contact</a>
+            </Link>
+          </div>
+          <div className="page-links">
+            <Link href="/services">
+              <a onClick={toggle}>Services</a>
+            </Link>
           </div>
         </div>
       </NavWrapper>

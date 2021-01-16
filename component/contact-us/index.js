@@ -2,6 +2,21 @@ import React from "react";
 import ContactWrapper from "./styledComponent/style.contact";
 import HeaderBanner from "../baseComponent/headerComponent/HeaderBanner";
 import { useState } from "react";
+
+const address = [
+  { label: "Lajpat Nagar", address: "" },
+  { label: "KarolBagh", address: "" },
+  { label: "Jaipur", address: "" },
+  { label: "Bhadrak", address: "" },
+  { label: "Balasore", address: "" },
+  { label: "Keonjhar", address: "" },
+  { label: "Howrah", address: "" },
+  { label: "Tarakeswar", address: "" },
+  { label: "Latur", address: "" },
+  { label: "Ranchi", address: "" },
+  { label: "Agra", address: "" },
+  { label: "Pune", address: "" },
+];
 const ContactUs = () => {
   const [form, setform] = useState({
     name: "",
@@ -80,6 +95,9 @@ const ContactUs = () => {
                   </div>
                 </form>
               </div>
+            </div>
+            <div className="row contact-branch">
+              <div className="col-md-4"></div>
             </div>
           </div>
         </div>
