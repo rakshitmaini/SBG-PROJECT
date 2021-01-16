@@ -13,5 +13,5 @@ module.exports = {
       //   "/p/deploy-nextjs": { page: "/post", query: { title: "deploy-nextjs" } },
     };
   },
-  exportTrailingSlash: true,
+  trailingSlash: true,
 };
