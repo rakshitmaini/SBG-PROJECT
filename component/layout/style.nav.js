@@ -17,7 +17,7 @@ export default styled.div`
       z-index: 9999;
       padding: 10px 3.125rem;
       display: flex;
-      align-content: center;
+      align-items: center;
       flex-wrap: nowrap;
       .nav-logo img {
         cursor: pointer;
