@@ -3,6 +3,8 @@ import variables from "../../../styles/variables";
 export default styled.div`
   .header {
     position: relative;
+    height: 25rem;
+    overflow: hidden;
     .overlay {
       width: 100%;
       height: 25rem;
@@ -12,9 +14,9 @@ export default styled.div`
       top: 0;
     }
     img {
-      /* max-height: 500px; */
+      margin: auto;
+      width: 100%;
       height: 25rem;
-      display: block;
     }
     .title {
       z-index: 2;
@@ -23,7 +25,7 @@ export default styled.div`
       left: 5rem;
       h1 {
         font-weight: 700;
-        font-size: 3.4375rem;
+        font-size: 3.5rem;
         color: white;
       }
       h3 {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export default styled.div`
-    .container-fluid {
+  .container-fluid {
     /* animation: ${fadeIn} 3s ease-in; */
     margin: 0;
     padding: 0;
@@ -20,7 +20,8 @@ export default styled.div`
     .row {
       display: flex !important;
       flex-direction: row-gap !important;
-      margin: 50px 0;
+      margin: 50px auto;
+      max-width: 1600px;
       /* flex-wrap: wrap-reverse !important; */
       .image-block img {
         max-width: 100%;
@@ -66,5 +67,4 @@ export default styled.div`
       }
     }
   }
-
 `;

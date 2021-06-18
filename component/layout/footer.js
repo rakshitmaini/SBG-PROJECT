@@ -62,10 +62,17 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm-4">
-              <img src="/Asset 3.png" alt="" className="logo-img" />
+              <img
+                as="link"
+                href="/"
+                src="/Asset 3.png"
+                alt=""
+                className="logo-img"
+              />
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
-                suscipit, libero a molestie consectetur, sapien elit lacinia mi.
+                We connect families and corporates with most innovative
+                insurance solutions to help them get the best and unmatched
+                solution possible.
               </p>
               <ul className="social-icon">
                 <Link href="#" className="social">

@@ -30,6 +30,9 @@ const Header = () => {
               <div>
                 <Link href="/services">Services</Link>
               </div>
+              <div>
+                <Link href="/mission-vision">Vision</Link>
+              </div>
             </div>
             <div className="nav-icon">
               <i
