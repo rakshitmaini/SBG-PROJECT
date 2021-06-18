@@ -16,10 +16,9 @@ export default styled.div`
       transform: translateX(-50.5%);
       z-index: 9999;
       padding: 10px 3.125rem;
-      /* height: 70px; */
       display: flex;
       align-content: center;
-      justify-content: space-between;
+      flex-wrap: nowrap;
       .nav-logo img {
         cursor: pointer;
         width: 9.375rem;
@@ -30,10 +29,12 @@ export default styled.div`
       .nav-buttons {
         font-size: 1.25rem;
         color: black;
-        max-width: 25rem;
         display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
         font-weight: 500;
         div {
+          max-width: 110px;
           color: #e05414;
           text-align: center;
           border-radius: 1.25rem;
