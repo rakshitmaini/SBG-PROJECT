@@ -17,6 +17,8 @@ export default styled.div`
       margin: auto;
       width: 100%;
       height: 25rem;
+      display: block;
+      background-position: right center;
     }
     .title {
       z-index: 2;

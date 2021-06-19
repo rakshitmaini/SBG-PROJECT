@@ -1,135 +1,165 @@
 import styled from "styled-components";
 import variables from "../../../styles/variables";
-import { fadeIn } from "../../../styles/animations";
 
 export default styled.div`
   .container-fluid {
-    animation: ${fadeIn} 0.3s ease-in;
     padding: 0;
     margin: 0;
     width: 100%;
     .contact-outer {
-      margin: 50px auto;
-      h1 {
-        text-align: center;
-        font-size: 30px;
-        font-weight: 600;
-        color: ${variables.primary_color};
+      padding: 3.125rem;
+
+      form {
+        padding-right: 2rem;
+        input,
+        textarea {
+          background-color: #f5f2f2;
+        }
+
+        label {
+          font-weight: 600;
+        }
+        button {
+          margin-top: 0.8rem;
+          margin-bottom: 1.3rem;
+        }
       }
-      h3 {
-        text-align: center;
-        font-size: 20px;
-        font-weight: 500;
-      }
-      .contact-inner {
-        display: flex;
-        justify-content: flex-start;
-        div {
-          p:first-of-type {
-            margin: 100px 10% 50px 10%;
-            font-size: 20px;
-            color: gray;
+      .container-fluid__head-office {
+        padding: 1rem 1rem 0rem 0rem;
+        span {
+          color: blue;
+          font-size: 1.3rem;
+        }
+        .social-icons {
+          width: 60%;
+          padding-top: 1rem;
+          i {
+            font-size: 1.6rem;
           }
-          p {
-            margin: 0 10% 0 10%;
+          i:hover {
+            font-size: 1.9rem;
           }
-          h2 {
-            margin: 0 10% 0 10%;
-            /* margin: 100px 10% 0 10%; */
-            font-size: 60px;
-            font-weight: 700;
+          .fb {
+            color: blue;
+          }
+          .twitter {
+            color: purple;
+          }
+          .youtube {
+            color: red;
+          }
+          .google {
+            color: orangered;
           }
         }
-        .contact-form {
-          margin: 50px 0;
-          form {
-            margin: auto;
-            /* text-align: center; */
-            width: 420px;
-            max-width: 100%;
-            justify-content: space-around;
-            padding: 30px 50px;
-            background-color: whitesmoke;
-            border-radius: 10px;
-            div {
-              margin: 20px auto;
-              label {
-                text-align: left;
-                float: left;
-              }
-              input {
-                background-color: transparent;
-                font-weight: 500;
-                width: 300px;
-                /* text-align: right; */
-                padding: 10px 20px;
-                border: 2px solid slategray;
-                border-radius: 5px;
-              }
-              input:focus {
-                outline: none;
-              }
-              input::placeholder {
-                color: lightgray;
-                font-weight: 450;
-              }
-              textarea {
-                background-color: transparent;
-                font-weight: 500;
-                width: 300px;
-                padding: 10px 20px;
-                border: 2px solid slategray;
-                border-radius: 5px;
-              }
-              textarea:focus {
-                outline: none;
-              }
-              textarea::placeholder {
-                color: lightgray;
-                font-weight: 450;
-              }
-            }
-          }
+      }
+    }
+    .container-fluid__offices-outer {
+      padding: 3.125rem;
+
+      hr {
+        border-width: thin;
+        border-color: darkblue;
+      }
+    }
+  }
+  .container-fluid__offices-data {
+    background-color: #f5f8fa;
+    margin-top: 0rem;
+
+    .row {
+      padding: 3rem 3rem;
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      .container-fluid__offices-text {
+        margin-top: 2rem;
+        .container-fluid__office-name {
+          color: #33475b;
+          font-size: 28px;
+          font-weight: 600;
+        }
+        h4 {
+          color: #33475b;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 29px;
+          margin-top: 20px;
+        }
+      }
+      .container-fluid__office-image {
+        img {
+          width: 500px;
+          height: 350px;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
       }
     }
   }
   @media screen and (max-width: 991px) {
-    .contact-inner {
-      .col-md-12 {
-        p,
-        h2 {
-          text-align: center;
-        }
-        p:first-of-type {
-          margin-top: 50px !important;
-        }
+    .container-fluid__office-image {
+      img {
+        width: 100% !important;
+        height: 400px !important;
+      }
+    }
+    .container-fluid__offices-data {
+      background-color: #d4ebf2;
+
+      div:nth-child(2) {
+        padding-left: 3rem;
+        display: grid;
       }
     }
   }
   @media screen and (max-width: 675px) {
-    .contact-inner {
-      .col-md-12 {
-        h2 {
-          font-size: 40px !important;
+    .container-fluid__office-image {
+      img {
+        width: 100% !important;
+        height: 400px !important;
+      }
+    }
+    .container-fluid__offices-data {
+      background-color: #d4ebf2;
+      div:nth-child(2) {
+        padding-left: 0rem;
+        display: grid;
+      }
+      .row:nth-child(odd) {
+        padding: 3rem 3rem;
+        display: grid;
+
+        grid-template-columns: 100%;
+        /* div:nth-child(2) {
+          order: 2;
+        } */
+      }
+      .row:nth-child(even) {
+        display: grid;
+      }
+    }
+    .container-fluid__offices-data:nth-child(odd) {
+      .row {
+        div:nth-child(1) {
+          order: 2;
         }
       }
     }
+    form {
+      padding-right: 0rem;
+    }
   }
   @media screen and (max-width: 450px) {
-    .contact-inner {
-      .contact-form {
-        form {
-          margin: 0;
-          text-align: center;
-          /* padding: 30px 0 !important; */
-          width: 100% !important;
-          input,
-          textarea {
-            width: 100% !important;
-          }
-        }
+    .container-fluid__office-image {
+      img {
+        width: 300px !important;
+        height: 100% !important;
       }
+    }
+    form {
+      padding-right: 0rem;
     }
   }
 `;
