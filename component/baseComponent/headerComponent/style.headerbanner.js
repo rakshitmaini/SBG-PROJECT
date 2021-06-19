@@ -15,6 +15,7 @@ export default styled.div`
       /* max-height: 500px; */
       height: 25rem;
       display: block;
+      background-position: right center;
     }
     .title {
       z-index: 2;
