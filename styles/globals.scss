@@ -20,25 +20,22 @@ body {
 
 @media screen and (max-width: 1200px) {
   html, body{
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 @media screen and (max-width: 1024px) {
   html, body{
-    font-size: 12px;
+    font-size: 14px !important;
   }
 }
 @media screen and (max-width: 768px) {
   html, body{
-    font-size: 12px;
+    font-size: 12px !important;
   }
 }
 
 
 @media screen and (max-width: 480px) {
-  html, body{
-    font-size: 10px;
-  }
   .overlay-text {
     padding: 1.25rem !important;
   }

@@ -67,6 +67,11 @@ const Header = () => {
               <a onClick={toggle}>Services</a>
             </Link>
           </div>
+          <div className="page-links">
+            <Link href="/mission-vision">
+              <a onClick={toggle}>Vision</a>
+            </Link>
+          </div>
         </div>
       </NavWrapper>
     </>

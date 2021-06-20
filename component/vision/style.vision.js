@@ -7,7 +7,7 @@ export const BannerWrapper = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 7rem 7rem 0 7rem;
   /* border-bottom: 12px solid whitesmoke; */
   background: rgb(15, 11, 13);
   background: linear-gradient(
@@ -66,7 +66,7 @@ export const BannerWrapper = styled.section`
     }
   }
   @media screen and (max-width: 620px) {
-    padding: 20rem 3rem;
+    padding: 10rem 3rem;
     text-align: center;
     flex-direction: column;
     gap: 6rem;
@@ -109,11 +109,11 @@ export const IntroWrapper = styled.section`
           vertical-align: middle;
           width: 50%;
         }
-        h3:before {
+        h3::before {
           right: 1rem;
           margin-left: -50%;
         }
-        h3:after {
+        h3::after {
           left: 1rem;
           margin-right: -50%;
         }
@@ -125,7 +125,7 @@ export const IntroWrapper = styled.section`
     }
   }
   @media screen and (max-width: 620px) {
-    margin-top: 20rem;
+    margin-top: 24rem;
     .section-outer {
       flex-direction: column;
       .section-inner {
