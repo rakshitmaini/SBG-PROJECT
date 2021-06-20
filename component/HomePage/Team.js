@@ -77,7 +77,7 @@ const Team = () => {
             {...settings}
           >
             {teamData.map((t, i) => (
-              <div key={i} className="col-sm-12 card-outer">
+              <div key={i} className="col-sm-12  card-outer">
                 <div className="card-inner">
                   <div className="card-image">
                     <img src={t.src} />

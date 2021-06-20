@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import variables from "../../../styles/variables";
 
 export default styled.div`
   .container-fluid {
@@ -8,7 +9,7 @@ export default styled.div`
     width: 100%;
     text-align: center;
     .title {
-      margin-top: 50px;
+      margin-top: 35px;
       h1 {
         font-weight: 700;
         font-size: 30px;
@@ -54,14 +55,14 @@ export default styled.div`
             color: whitesmoke;
             font-weight: 600;
             float: left;
-            margin-top: 60px;
+            margin-top: 20px;
             font-size: 22px;
-            background-color: rgb(68, 85, 90);
+            background-color: ${variables.primary_color};
             border: none;
-            box-shadow: 2px 4px 4px 2px darkslategray;
-            /* border: 5px solid black; */
+            box-shadow: 2px 3px 10px 2px blue;
+
             border-radius: 50px;
-            padding: 5px 10px;
+            padding: 7px 10px;
           }
         }
       }

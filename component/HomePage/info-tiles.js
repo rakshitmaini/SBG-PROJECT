@@ -33,7 +33,7 @@ const InfoTiles = () => {
                 key={i}
                 data-aos="fade-down"
                 data-aos-duration="1000"
-                className="col-md-4 col-sm-12"
+                className="col-md-4 col-sm-4 col-xs-12"
               >
                 <div className="card">
                   <div className="card-image">

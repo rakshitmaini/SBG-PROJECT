@@ -4,24 +4,21 @@ import ServicesWrapper from "./styledComponent/style.services";
 const ServicesInfo = [
   {
     title: "Life Insurance",
-    info:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+    info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
     align: "top",
     count: "1",
     image: "/images/life-insurance.jpg",
   },
   {
     title: "Medical Insurance",
-    info:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+    info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
     align: "top",
     count: "2",
     image: "/images/medical-insurance.png",
   },
   {
     title: "Motor Insurance",
-    info:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
+    info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
     align: "bottom",
     count: "3",
     image: "/images/motor-insurance.png",
@@ -41,14 +38,15 @@ const Services = () => {
                   Our <span className="service-tag">Services</span>
                 </h1>
                 <p className="text-secondary">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Magnam, ea atque reiciendis saepe et similique eveniet
-                  distinctio autem odit blanditiis.{" "}
+                  The life and property of an individual are surrounded by the
+                  risk of death, disability or destruction. These risks may
+                  result in financial losses. Insurance is a prudent way to
+                  transfer such risks to an insurance company.
                 </p>
                 <p className="text-secondary">
                   {" "}
-                  consequatur nesciunt doloribus ad sit reprehenderit, beatae
-                  error illo aut!
+                  Our team does adequate amount research before suggesting right
+                  insurance policy to you.
                 </p>
               </div>
             </div>
