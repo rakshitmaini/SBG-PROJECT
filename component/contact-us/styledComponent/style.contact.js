@@ -14,6 +14,7 @@ export default styled.div`
         input,
         textarea {
           background-color: #f5f2f2;
+          color: darkblue;
         }
 
         label {
@@ -33,8 +34,10 @@ export default styled.div`
         .social-icons {
           width: 60%;
           padding-top: 1rem;
+          margin-left: 0rem;
           i {
             font-size: 1.6rem;
+            margin-right: 1.4rem;
           }
           i:hover {
             font-size: 1.9rem;
@@ -55,7 +58,7 @@ export default styled.div`
       }
     }
     .container-fluid__offices-outer {
-      padding: 3.125rem;
+      padding: 0rem 3.125rem 0rem 3.125rem;
 
       hr {
         border-width: thin;
@@ -68,12 +71,13 @@ export default styled.div`
     margin-top: 0rem;
 
     .row {
-      padding: 3rem 3rem;
+      padding: 0.5rem 3.125rem 0.5rem 3.125rem;
       display: grid;
       grid-template-columns: 50% 50%;
 
       .container-fluid__offices-text {
         margin-top: 2rem;
+        margin-right: 3.5rem;
         .container-fluid__office-name {
           color: #33475b;
           font-size: 28px;
@@ -81,10 +85,16 @@ export default styled.div`
         }
         h4 {
           color: #33475b;
+          text-transform: uppercase;
+          text-decoration: underline;
           font-size: 18px;
           font-weight: 600;
           line-height: 29px;
           margin-top: 20px;
+        }
+        span {
+          font-size: 1.3rem;
+          font-weight: 400;
         }
       }
       .container-fluid__office-image {
@@ -106,8 +116,14 @@ export default styled.div`
       }
     }
     .container-fluid__offices-data {
-      background-color: #d4ebf2;
-
+      div:nth-child(2) {
+        padding-left: 3rem;
+        display: grid;
+      }
+    }
+  }
+  @media screen and (max-width: 1105px) {
+    .container-fluid__offices-data {
       div:nth-child(2) {
         padding-left: 3rem;
         display: grid;
@@ -122,19 +138,14 @@ export default styled.div`
       }
     }
     .container-fluid__offices-data {
-      background-color: #d4ebf2;
       div:nth-child(2) {
         padding-left: 0rem;
         display: grid;
       }
       .row:nth-child(odd) {
-        padding: 3rem 3rem;
         display: grid;
 
         grid-template-columns: 100%;
-        /* div:nth-child(2) {
-          order: 2;
-        } */
       }
       .row:nth-child(even) {
         display: grid;
@@ -147,19 +158,22 @@ export default styled.div`
         }
       }
     }
+
     form {
       padding-right: 0rem;
     }
   }
   @media screen and (max-width: 450px) {
     .container-fluid__office-image {
+      text-align: center;
+      align-items: center;
       img {
-        width: 300px !important;
+        width: 100% !important;
         height: 100% !important;
       }
     }
     form {
-      padding-right: 0rem;
+      padding-right: 0rem !important;
     }
   }
 `;

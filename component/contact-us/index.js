@@ -140,15 +140,15 @@ const ContactUs = () => {
       <ContactWrapper>
         <div className="container-fluid">
           <HeaderBanner
-            img="/contactUsAssets/contact-us.jpg"
+            img="/contactUsAssets/contact.jpg"
             tag="Contact Us"
             intro="Have some Questions ?"
           />
           <div className="contact-outer row">
-            <div className="col-lg-7 col-md-12">
+            <div className="col-lg-7 col-md-6 col-sm-12">
               <form>
                 <div className="row">
-                  <div className="form-group col-lg-6 col-md-12">
+                  <div className="form-group col-lg-6 col-md-6">
                     <label for="name">Name</label>
                     <input
                       type="text"
@@ -157,7 +157,7 @@ const ContactUs = () => {
                       autoComplete="off"
                     />
                   </div>
-                  <div className="form-group col-lg-6 col-md-12">
+                  <div className="form-group col-lg-6 col-md-6 col-sm-12">
                     <label for="name">Phone Number</label>
                     <input
                       type="text"
@@ -210,7 +210,7 @@ const ContactUs = () => {
                 </button>
               </form>
             </div>
-            <div className="col-lg-5 col-md-12">
+            <div className="col-lg-5 col-md-6 col-sm-12">
               <DynamicComponentWithNoSSR />
               <div className="container-fluid__head-office">
                 <h5>
@@ -220,20 +220,14 @@ const ContactUs = () => {
 
                 <span>xyz@gmail.com | xx-xxxx-xxxx</span>
                 <div className="row social-icons">
-                  <i className="fa fb fa-facebook col" aria-hidden="true"></i>
+                  <i className="fa fb fa-facebook " aria-hidden="true"></i>
 
                   <i
-                    className="fa youtube fa-youtube-play col"
+                    className="fa youtube fa-youtube-play "
                     aria-hidden="true"
                   ></i>
-                  <i
-                    className="fa twitter fa-twitter col"
-                    aria-hidden="true"
-                  ></i>
-                  <i
-                    className="fa google fa-google col "
-                    aria-hidden="true"
-                  ></i>
+                  <i className="fa twitter fa-twitter " aria-hidden="true"></i>
+                  <i className="fa google fa-google  " aria-hidden="true"></i>
                 </div>
               </div>
             </div>

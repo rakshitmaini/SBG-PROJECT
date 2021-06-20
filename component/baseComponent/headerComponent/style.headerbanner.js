@@ -27,11 +27,14 @@ export default styled.div`
       z-index: 2;
       position: absolute;
       top: 17.5rem;
-      left: 3.125rem;
+      padding-top: 1rem;
+      padding-left: 3.125rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      width: 100%;
       h1 {
         font-weight: 700;
         font-size: 3.5rem;
-        color: white;
+        color: ${variables.secondary_color};
       }
       h3 {
         color: ${variables.primary_color};
@@ -47,6 +50,18 @@ export default styled.div`
         h1 {
           font-size: 3rem;
         }
+      }
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .banner-img {
+      height: 25rem;
+      width: 100%;
+      img {
+        position: absolute;
+        left: 45%;
+        transform: translateX(-50%);
+        max-height: 25rem;
       }
     }
   }

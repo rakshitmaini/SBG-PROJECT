@@ -8,7 +8,7 @@ const AboutUs = () => {
           <HeaderBanner
             img="/aboutUsAssets/about-us.jpg"
             tag="About Us"
-            intro="A few words"
+            intro="We're a talented bunch"
           />
 
           <div className="section-outer row">
