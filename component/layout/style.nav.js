@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const SidebarWrapper = styled.div`
+  .MuiDrawer-paper {
+    width: 60% !important;
+  }
+`;
+
 export default styled.div`
   div {
     width: 100%;
@@ -12,7 +18,7 @@ export default styled.div`
       top: 0.625rem;
       left: 50%;
       transform: translateX(-50.5%);
-      z-index: 9999;
+      z-index: 99;
       padding: 10px 3.125rem;
       display: flex;
       align-items: center;
@@ -21,6 +27,7 @@ export default styled.div`
         cursor: pointer;
         width: 9.375rem;
         vertical-align: super;
+        margin-left: -1rem;
       }
       .nav-icon {
         display: none;

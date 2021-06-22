@@ -13,6 +13,42 @@ body {
 
 }
 
+.MuiDrawer-paper {
+  overflow: hidden;
+    width: 200px !important;
+     background: rgb(213,206,202);
+background: linear-gradient(180deg, rgba(213,206,202,1) 0%, rgba(199,213,237,1) 100%); 
+    .all-links{
+      .head{
+         color: #555 !important;
+          font-size: 1.5rem;
+        padding:  1rem 0 0 2rem !important;
+        font-weight: 700;
+
+      }
+      hr{
+        border-top: 3px solid #999;
+      }
+      .page-links{
+        a{
+          padding:  1rem  2rem !important;
+          display: block;
+          width: 100%;
+          height: 100%;
+          text-decoration: none;
+          color: #555 !important;
+          font-size: 1.4rem;
+        font-weight: 500;
+
+          &:hover{
+            background-color: #555;
+            color: whitesmoke !important;
+          }
+        }
+      }
+    }
+  }
+
 ::selection {
   color: white;
   background-color: #fda379;
@@ -31,20 +67,5 @@ body {
 @media screen and (max-width: 768px) {
   html, body{
     font-size: 12px !important;
-  }
-}
-
-
-@media screen and (max-width: 480px) {
-  .overlay-text {
-    padding: 1.25rem !important;
-  }
-
-  .overlay-text h1 {
-    font-size: 1.5625rem !important;
-  }
-
-  .overlay-text h3 {
-    font-size: 0.9375rem;
   }
 }
