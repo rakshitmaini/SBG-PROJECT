@@ -20,7 +20,7 @@ const UsefulLinks = [
   {
     tag: "Vision",
     path: "/mission-vision",
-    style: "fa fa-question-circle",
+    style: "fa fa-eye",
   },
 ];
 const locationLinks = [
@@ -74,9 +74,9 @@ const Footer = () => {
             <div className="col-sm-4">
               <img
                 as="link"
-                href="/"
+                href="/#"
                 src="/Asset 3.png"
-                alt=""
+                alt="Shri Balaji Global Insurance Private Limited"
                 className="logo-img"
               />
               <p>

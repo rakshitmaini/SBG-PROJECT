@@ -68,7 +68,7 @@ const Services = () => {
                     <div className=" px-3 py-5">
                       <div className="mt-3">
                         <div className="service-img">
-                          <img src={s.image} alt="" />
+                          <img src={s.image} alt={s.title} />
                         </div>
                         <h5 className="mb-2">
                           <Link href={s.path} className="stretched-link">

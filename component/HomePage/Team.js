@@ -80,7 +80,7 @@ const Team = () => {
               <div key={i} className="col-sm-12  card-outer">
                 <div className="card-inner">
                   <div className="card-image">
-                    <img src={t.src} />
+                    <img src={t.src} alt={t.name} />
                   </div>
                   <div className="card-content">
                     <p>{t.introLine}</p>

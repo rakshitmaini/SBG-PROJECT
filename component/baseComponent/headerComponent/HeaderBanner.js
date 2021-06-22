@@ -6,7 +6,7 @@ const HeaderBanner = (props) => {
       <HeaderWrapper>
         <div className="header">
           <div className="banner-img">
-            <img src={props.img} />
+            <img src={props.img} alt={props.tag} />
           </div>
 
           <div className="overlay"></div>
