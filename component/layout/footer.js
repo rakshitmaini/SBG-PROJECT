@@ -18,41 +18,51 @@ const UsefulLinks = [
     style: "fa fa-medkit",
   },
   {
-    tag: "FAQs",
-    path: "/faqs",
+    tag: "Vision",
+    path: "/mission-vision",
     style: "fa fa-question-circle",
   },
 ];
 const locationLinks = [
   {
     tag: "Delhi",
+    path: "/contact#delhi-karol",
   },
   {
     tag: "Jaipur",
+    path: "/contact#jaipur",
   },
   {
     tag: "Odisha",
+    path: "/contact#odisha-balasore",
   },
   {
     tag: "West Bengal",
+    path: "/contact#westbengal-Howrah",
   },
   {
     tag: "Kolkata",
+    path: "/contact#kolkata",
   },
   {
     tag: "Nagpur",
+    path: "/contact#nagpur",
   },
   {
     tag: "Maharashtra",
+    path: "/contact#maharashtra-latur",
   },
   {
     tag: "Ranchi",
+    path: "/contact#ranchi",
   },
   {
     tag: "Agra",
+    path: "/contact#agra",
   },
   {
     tag: "Pune",
+    path: "/contact#pune",
   },
 ];
 const Footer = () => {
@@ -74,7 +84,7 @@ const Footer = () => {
                 insurance solutions to help them get the best and unmatched
                 solution possible.
               </p>
-              <ul className="social-icon">
+              {/* <ul className="social-icon">
                 <Link href="#" className="social">
                   <i className="fa fa-facebook" aria-hidden="true"></i>
                 </Link>
@@ -90,7 +100,7 @@ const Footer = () => {
                 <Link href="#" className="social">
                   <i className="fa fa-google" aria-hidden="true"></i>
                 </Link>
-              </ul>
+              </ul> */}
             </div>
             <div className="col-sm-4">
               <h4 className="title">Useful Links</h4>
@@ -111,7 +121,7 @@ const Footer = () => {
               <div className="category">
                 <ul>
                   {locationLinks.map((ll) => (
-                    <Link key={ll.tag} href="#">
+                    <Link key={ll.tag} href={ll.path}>
                       {ll.tag}
                     </Link>
                   ))}

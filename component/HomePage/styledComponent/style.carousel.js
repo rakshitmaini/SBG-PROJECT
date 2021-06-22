@@ -54,6 +54,18 @@ export default styled.div`
       }
     }
   }
+  @media screen and (max-width: 1200px) {
+    .slick-dots li button:before {
+      font-family: "slick";
+      font-size: 6px;
+      line-height: 16px;
+      position: absolute;
+      top: 0;
+      left: -2px;
+      width: 20px;
+      height: 20px;
+    }
+  }
   @media screen and (max-width: 480px) {
     .overlay-text {
       h1 {

@@ -47,6 +47,9 @@ export default styled.div`
             color: #e05414;
           }
         }
+        div:nth-child(3) {
+          margin-right: 0.8rem;
+        }
         .nav-icon {
           display: block;
           width: 27.44px;

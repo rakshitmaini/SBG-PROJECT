@@ -11,7 +11,7 @@ const HomePage = () => {
       <Services />
       <InfoTiles />
       <Team />
-      <Partner />
+      {/* <Partner /> */}
     </>
   );
 };
