@@ -31,8 +31,9 @@ export default styled.div`
       .container-fluid__head-office {
         padding: 1rem 1rem 0rem 0rem;
         span {
-          color: blue;
+          color: ${variables.primary_color};
           font-size: 1.3rem;
+          cursor: pointer;
         }
         .social-icons {
           width: 60%;
@@ -62,7 +63,13 @@ export default styled.div`
     }
     .container-fluid__offices-outer {
       padding: 0rem 3.125rem 0rem 3.125rem;
-
+      p {
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      h2 {
+        color: ${variables.primary_color};
+      }
       hr {
         border-width: thin;
         border-color: darkblue;
@@ -89,14 +96,18 @@ export default styled.div`
         h4 {
           color: #33475b;
           text-transform: uppercase;
-          text-decoration: underline;
-          font-size: 18px;
+          /* text-decoration: underline; */
+          font-size: 1.4rem;
           font-weight: 600;
           line-height: 29px;
           margin-top: 20px;
+          &:first-child {
+            /* background-color: rgba(228, 241, 254, 1);
+            padding: 1.5rem 0.2rem; */
+          }
         }
         span {
-          font-size: 1.3rem;
+          font-size: 1.1rem;
           font-weight: 400;
         }
       }

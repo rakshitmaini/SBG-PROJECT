@@ -1,9 +1,11 @@
 import React from "react";
 import ServicesWrapper from "./styledComponent/style.services";
+import Link from "next/link";
 
 const ServicesInfo = [
   {
     title: "Life Insurance",
+    path: "/services#life",
     info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
     align: "top",
     count: "1",
@@ -11,6 +13,7 @@ const ServicesInfo = [
   },
   {
     title: "Medical Insurance",
+    path: "/services#medical",
     info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
     align: "top",
     count: "2",
@@ -18,6 +21,7 @@ const ServicesInfo = [
   },
   {
     title: "Motor Insurance",
+    path: "/services#motor",
     info: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.",
     align: "bottom",
     count: "3",
@@ -38,15 +42,15 @@ const Services = () => {
                   Our <span className="service-tag">Services</span>
                 </h1>
                 <p className="text-secondary">
-                  The life and property of an individual are surrounded by the
-                  risk of death, disability or destruction. These risks may
-                  result in financial losses. Insurance is a prudent way to
-                  transfer such risks to an insurance company.
+                  SBGIS it's all about bringing certainty to an uncertain life.
+                  Secure your family's future by taking a life/ Health cover.
+                  Plan your retirement, your children’s education and even save
+                  up for other important life events.
                 </p>
                 <p className="text-secondary">
                   {" "}
-                  Our team does adequate amount research before suggesting right
-                  insurance policy to you.
+                  Our team does adequate amount of research before suggesting
+                  right insurance policy to you.
                 </p>
               </div>
             </div>
@@ -67,9 +71,9 @@ const Services = () => {
                           <img src={s.image} alt="" />
                         </div>
                         <h5 className="mb-2">
-                          <a href="#" className="stretched-link">
+                          <Link href={s.path} className="stretched-link">
                             {s.title}
-                          </a>
+                          </Link>
                         </h5>
                       </div>
                     </div>

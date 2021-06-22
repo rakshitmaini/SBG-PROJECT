@@ -165,7 +165,6 @@ const ContactUs = () => {
         .collection("contact")
         .add(data)
         .then((res) => {
-          console.log(res.id);
           setData(initState);
           toast.success(
             "Form Submitted successfully. We will get back to you soon."
@@ -310,7 +309,8 @@ const ContactUs = () => {
                 }}
               >
                 <hr />
-                <h2>Connect with one of our offices</h2>
+                <h2>Our Footprints in India</h2>
+                <p>COVERAGE IN 10 STATES AND GROWING</p>
                 <hr />
               </div>
             </div>
