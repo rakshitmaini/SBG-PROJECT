@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 import { contactSchema } from "../../validations/contactValidation";
 import { toast, ToastContainer } from "react-toastify";
 import { firestore } from "../../firebase.config";
-import * as email from "emailjs-com";
+// import * as email from "emailjs-com";
 
 const MapDynamicComponentWithNoSSR = dynamic(
   () => import("../baseComponent/MapComponent"),
