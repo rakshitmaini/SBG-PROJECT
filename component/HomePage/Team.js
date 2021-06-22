@@ -34,18 +34,15 @@ const settings = {
   arrows: false,
   className: "center",
   autoplay: true,
-  autoplaySpeed: 800,
+  autoplaySpeed: 4000,
   infinite: true,
-  speed: 10000,
   slidesToShow: 3,
-  speed: 500,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
         centerMode: false,
         slidesToShow: 2,
-        // slidesToScroll: 1,
         infinite: true,
       },
     },
@@ -54,7 +51,6 @@ const settings = {
       settings: {
         centerMode: true,
         slidesToShow: 1,
-        // slidesToScroll: 1,
         autoplaySpeed: 6000,
         infinite: true,
         swipeToSlide: true,

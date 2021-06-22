@@ -125,7 +125,7 @@ export const IntroWrapper = styled.section`
     }
   }
   @media screen and (max-width: 620px) {
-    margin-top: 24rem;
+    margin-top: 14rem;
     .section-outer {
       flex-direction: column;
       .section-inner {
