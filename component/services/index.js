@@ -67,7 +67,7 @@ const ServicesPage = () => {
                 <div>
                   <h3>{s.title}</h3>
                   <p>{s.info}</p>
-                  <button>Read More</button>
+                  {/* <button>Read More</button> */}
                 </div>
               </div>
             </div>

@@ -33,6 +33,9 @@ export default styled.div`
               span {
                 font-size: 1.2rem;
               }
+              & :hover {
+                cursor: pointer;
+              }
             }
           }
 

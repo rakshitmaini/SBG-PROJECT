@@ -5,6 +5,7 @@ export default styled.div`
   .container-fluid {
     /* animation: ${fadeIn} 3s ease-in; */
     margin: 0;
+    margin-bottom: 3rem;
     padding: 0;
     width: 100%;
     text-align: center;
@@ -21,7 +22,8 @@ export default styled.div`
     .row {
       display: flex !important;
       flex-direction: row-gap !important;
-      margin: 50px auto;
+      margin: auto;
+      padding-top: 80px;
       max-width: 1600px;
       /* flex-wrap: wrap-reverse !important; */
       .image-block img {
