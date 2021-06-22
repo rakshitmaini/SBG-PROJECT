@@ -339,6 +339,7 @@ const ContactUs = () => {
                       src={ele.image}
                       id={ele.id}
                       className=" img-responsive "
+                      alt={ele.name}
                     />
                   </div>
                 </div>
@@ -353,6 +354,7 @@ const ContactUs = () => {
                     src={ele.image}
                     id={ele.id}
                     className=" img-responsive "
+                    alt={ele.name}
                   />
                 </div>
                 <div className="container-fluid__office-details ">

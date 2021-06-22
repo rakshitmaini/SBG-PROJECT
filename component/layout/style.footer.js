@@ -129,6 +129,17 @@ export default styled.div`
       }
     }
   }
+  @media (max-width: 575px) {
+    .footer {
+      .container {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+        p {
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
   @media screen and (min-width: 576px) and (max-width: 776px) {
     .footer {
       .category {

@@ -26,7 +26,7 @@ const Carousel = () => {
           <Slider {...settings}>
             {BannerList.map((banner, i) => (
               <div key={i} className="banner-image">
-                <img src={banner.image} width="100%" />
+                <img src={banner.image} width="100%" alt="carousel image" />
               </div>
             ))}
           </Slider>

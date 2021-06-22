@@ -14,7 +14,11 @@ const Header = () => {
           <div className="nav-outer">
             <div className="nav-logo">
               <Link href="/">
-                <img src="/Asset 3.png" height="100%" />
+                <img
+                  src="/Asset 3.png"
+                  height="100%"
+                  alt="Shri Balaji Global Insurance Private Limited"
+                />
               </Link>
             </div>
             <div className="nav-buttons">

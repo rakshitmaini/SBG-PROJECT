@@ -38,7 +38,10 @@ const AboutUs = () => {
             </div>{" "}
             <div className="section-image col-lg-6 col-md-12">
               <div>
-                <img src="https://websitedemos.net/chartered-accountant-02/wp-content/uploads/sites/236/2019/06/feature3-free-img.png" />
+                <img
+                  src="https://websitedemos.net/chartered-accountant-02/wp-content/uploads/sites/236/2019/06/feature3-free-img.png"
+                  alt="SBGIS"
+                />
               </div>
             </div>
           </div>
@@ -70,7 +73,10 @@ const AboutUs = () => {
           <div className="team-block">
             <div className="block-member">
               <div className="member-img">
-                <img src="/aboutUsAssets/team/sachin.png" />
+                <img
+                  src="/aboutUsAssets/team/sachin.png"
+                  alt="Sachin Sharma, Principal Office"
+                />
               </div>
               <div className="member-info">
                 <h3 className="member-name">Sachin Sharma</h3>
@@ -99,7 +105,10 @@ const AboutUs = () => {
             </div>
             <div className="block-member">
               <div className="member-img">
-                <img src="/aboutUsAssets/avatar.jpg" />
+                <img
+                  src="/aboutUsAssets/avatar.jpg"
+                  alt="Faiz Khan, Director"
+                />
               </div>
               <div className="member-info">
                 <h3 className="member-name">Faiz Khan</h3>
@@ -118,7 +127,10 @@ const AboutUs = () => {
             </div>
             <div className="block-member">
               <div className="member-img">
-                <img src="/aboutUsAssets/avatar.jpg" />
+                <img
+                  src="/aboutUsAssets/avatar.jpg"
+                  alt="Pankaj Kumar, Director"
+                />
               </div>
               <div className="member-info">
                 <h3 className="member-name">Pankaj Kumar</h3>
