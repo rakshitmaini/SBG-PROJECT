@@ -8,10 +8,11 @@ module.exports = {
       "/about": { page: "/about" },
       "/contact": { page: "/contact" },
       "/services": { page: "/services" },
+      "/mission-vision": { page: "/mission-vision" },
       //   "/p/hello-nextjs": { page: "/post", query: { title: "hello-nextjs" } },
       //   "/p/learn-nextjs": { page: "/post", query: { title: "learn-nextjs" } },
       //   "/p/deploy-nextjs": { page: "/post", query: { title: "deploy-nextjs" } },
     };
   },
-  exportTrailingSlash: true,
+  trailingSlash: true,
 };
