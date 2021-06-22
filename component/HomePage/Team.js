@@ -29,11 +29,12 @@ const teamData = [
   },
 ];
 const settings = {
-  centerMode: true,
-  arrows: true,
+  centerMode: false,
+  focusOnSelect: false,
+  arrows: false,
   className: "center",
   autoplay: true,
-  autoplaySpeed: 8000,
+  autoplaySpeed: 800,
   infinite: true,
   speed: 10000,
   slidesToShow: 3,
@@ -56,6 +57,8 @@ const settings = {
         // slidesToScroll: 1,
         autoplaySpeed: 6000,
         infinite: true,
+        swipeToSlide: true,
+        swipe: true,
       },
     },
   ],
@@ -70,16 +73,9 @@ const Team = () => {
             <h1>Team</h1>
             <h1>Our Squad</h1>
           </div>
-          <div
-            className="prev-btn"
-            onClick={() => customSlider.current.slickPrev()}
-          ></div>
-          <div
-            className="next-btn"
-            onClick={() => customSlider.current.slickNext()}
-          ></div>
+
           <Slider
-            ref={(slider) => (customSlider.current = slider)}
+            // ref={(slider) => (customSlider.current = slider)}
             {...settings}
           >
             {teamData.map((t, i) => (
@@ -89,6 +85,7 @@ const Team = () => {
                     <div className="card-image member-img">
                       <img src={t.src} alt="Sachin Sharma, Principal Office" />
                     </div>
+
                     <div className="card-content">
                       <h2>{t.name}</h2>
                       <p>{t.introLine}</p>
