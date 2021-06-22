@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import { contactSchema } from "../../validations/contactValidation";
 import { toast, ToastContainer } from "react-toastify";
 import { firestore } from "../../firebase.config";
+import * as email from "emailjs-com";
 
 const MapDynamicComponentWithNoSSR = dynamic(
   () => import("../baseComponent/MapComponent"),
@@ -151,20 +152,34 @@ const ContactUs = () => {
 
   async function handleSubmit(e) {
     e.preventDefault();
-    console.log("submitted");
-    // try {
-    //   const dt = await contactSchema.validate(data);
-    //   console.log({ dt });
-    // } catch (err) {
-    //   console.log({ err });
-    // }
-    const dt = await contactSchema.isValid(data);
+    let dt;
+    try {
+      dt = await contactSchema.validate(data);
+    } catch (err) {
+      // console.log({ err });
+      toast.error(err.message);
+    }
+
     if (dt) {
-      console.log({ data });
       firestore
         .collection("contact")
         .add(data)
         .then((res) => {
+          // let templateParams = {
+          //   from_name: data.name,
+          //   to_name: "rmaini.10@gmail.com",
+          //   subject_html: data.subject,
+          //   message_html: data.message,
+          //   reply_to: data.email,
+          // };
+
+          // const response = await email.send(
+          //   "gmail",
+          //   "template_clbsb9rW",
+          //   templateParams,
+          //   "user_1sa03CAEgns46qxvtblwr"
+          // );
+          // console.log({ response });
           setData(initState);
           toast.success(
             "Form Submitted successfully. We will get back to you soon."
@@ -173,9 +188,6 @@ const ContactUs = () => {
         .catch((error) => {
           console.log({ error });
         });
-    } else {
-      console.log("fail");
-      toast.error("Form field is invalid");
     }
   }
   return (
