@@ -93,36 +93,3 @@ const Header = () => {
   );
 };
 export default Header;
-
-{
-  /* <div style={show ? {} : { display: "none" }} className="overlay-btns">
-          <div className="up">
-            <i className="fa fa-2x fa-caret-up" aria-hidden="true"></i>
-          </div>
-          <div className="page-links">
-            <Link href="/">
-              <a onClick={toggle}>Home</a>
-            </Link>
-          </div>
-          <div className="page-links">
-            <Link href="/about">
-              <a onClick={toggle}>About</a>
-            </Link>
-          </div>
-          <div className="page-links">
-            <Link href="/contact">
-              <a onClick={toggle}>Contact</a>
-            </Link>
-          </div>
-          <div className="page-links">
-            <Link href="/services">
-              <a onClick={toggle}>Services</a>
-            </Link>
-          </div>
-          <div className="page-links">
-            <Link href="/mission-vision">
-              <a onClick={toggle}>Vision</a>
-            </Link>
-          </div>
-        </div> */
-}
