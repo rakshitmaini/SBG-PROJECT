@@ -56,9 +56,28 @@ export default styled.div`
                 max-width: 100%;
                 .card-image {
                   img {
-                    width: 9.375rem;
+                    width: 75px;
                     margin: auto;
                     border-radius: 50%;
+                  }
+                }
+                .member-img {
+                  min-width: 75px;
+                  height: auto;
+
+                  img {
+                    border-radius: 50%;
+                    /* border: 1px solid #d5d5d5; */
+                    padding: 0.3rem;
+                    width: 75%;
+                    height: 100%;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    background: rgb(250, 246, 237);
+                    background: linear-gradient(
+                      90deg,
+                      rgba(250, 246, 237, 1) 0%,
+                      rgba(247, 250, 255, 1) 100%
+                    );
                   }
                 }
                 .card-content {
@@ -85,7 +104,6 @@ export default styled.div`
               border-radius: 0;
               width: 100%;
               .card-inner {
-                
                 text-align: center;
                 width: 25rem;
                 max-width: 100%;

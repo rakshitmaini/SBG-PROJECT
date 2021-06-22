@@ -1,34 +1,30 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
 import TeamWrapper from "./styledComponent/style.team";
-
+import Link from "next/link";
 const teamData = [
   {
-    name: "ABC",
+    name: "Sachin Sharma",
     profile: "",
+    path: "/about#Sachin-Sharma",
     introLine:
-      "lorem ipsum lorem ipsumlorem ipsumlorem lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ipsumlorem ipsumlorem ipsumlorem ipsum ",
+      "Mr. Sachin Sharma, Post graduate in Global Marketing & Finance and B.Com from Delhi University, aged 44 years, is appointed as Principle Office of SBGIS. He has over 23 years..",
+    src: "/aboutUsAssets/team/sachin.png",
+  },
+  {
+    name: "Faiz Khan",
+    profile: "",
+    path: "/about#Faiz-Khan",
+    introLine:
+      "20 years of rich experience in Venue Sales model. One of the founder of Venue Sales Channel in Bajaj Capital. Highly experienced and innovative with... ",
     src: "/aboutUsAssets/avatar.jpg",
   },
   {
-    name: "DEF",
+    name: "Pankaj Kumar",
     profile: "",
+    path: "/about#Pankaj-Kumar",
     introLine:
-      "lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ",
-    src: "/aboutUsAssets/avatar.jpg",
-  },
-  {
-    name: "GHI",
-    profile: "",
-    introLine:
-      "lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum ",
-    src: "/aboutUsAssets/avatar.jpg",
-  },
-  {
-    name: "JKL",
-    profile: "",
-    introLine:
-      "lorem lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem  ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum ",
+      "Pankaj Kumar is a self-driven entrepreneurial leader with 16 years of diverse work experience covering BPO & BFSI Sector.He was associated with prestigious NBFC as Vice President & was responsible for end-to-end management. His leadership...",
     src: "/aboutUsAssets/avatar.jpg",
   },
 ];
@@ -49,6 +45,16 @@ const settings = {
         centerMode: false,
         slidesToShow: 2,
         // slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        centerMode: true,
+        slidesToShow: 1,
+        // slidesToScroll: 1,
+        autoplaySpeed: 6000,
         infinite: true,
       },
     },
@@ -78,15 +84,17 @@ const Team = () => {
           >
             {teamData.map((t, i) => (
               <div key={i} className="col-sm-12  card-outer">
-                <div className="card-inner">
-                  <div className="card-image">
-                    <img src={t.src} alt={t.name} />
+                <Link href={t.path}>
+                  <div className="card-inner">
+                    <div className="card-image member-img">
+                      <img src={t.src} alt="Sachin Sharma, Principal Office" />
+                    </div>
+                    <div className="card-content">
+                      <h2>{t.name}</h2>
+                      <p>{t.introLine}</p>
+                    </div>
                   </div>
-                  <div className="card-content">
-                    <p>{t.introLine}</p>
-                    <h2>{t.name}</h2>
-                  </div>
-                </div>
+                </Link>
               </div>
             ))}
           </Slider>

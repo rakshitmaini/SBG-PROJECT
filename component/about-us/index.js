@@ -71,7 +71,7 @@ const AboutUs = () => {
           </div>
 
           <div className="team-block">
-            <div className="block-member">
+            <div className="block-member" id="Sachin-Sharma">
               <div className="member-img">
                 <img
                   src="/aboutUsAssets/team/sachin.png"
@@ -103,7 +103,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="block-member">
+            <div className="block-member" id="Faiz-Khan">
               <div className="member-img">
                 <img
                   src="/aboutUsAssets/avatar.jpg"
@@ -125,7 +125,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="block-member">
+            <div className="block-member" id="Pankaj-Kumar">
               <div className="member-img">
                 <img
                   src="/aboutUsAssets/avatar.jpg"
