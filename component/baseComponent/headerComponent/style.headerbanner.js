@@ -26,18 +26,18 @@ export default styled.div`
     .title {
       z-index: 2;
       position: absolute;
-      top: 17.5rem;
-      padding-top: 1rem;
+      top: 16rem;
+      padding: 1.25rem 0;
       padding-left: 3.125rem;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: #00000088;
       width: 100%;
       h1 {
         font-weight: 700;
         font-size: 3.5rem;
-        color: ${variables.secondary_color};
+        color: ${variables.primary_color};
       }
       h3 {
-        color: ${variables.primary_color};
+        color: ${variables.secondary_color};
         font-weight: 700;
         font-size: 1.5625rem;
       }

@@ -7,6 +7,6 @@ export const contactSchema = yup.object().shape({
   name: yup.string().required().label("Name"),
   email: yup.string().email().required().label("Name"),
   mobile: yup.string().matches(phoneRegExp, "Phone number is not valid"),
-  subject: yup.string().min(5).required().label("Subject"),
+  subject: yup.string().required().label("Subject"),
   message: yup.string().optional().label("Message"),
 });
