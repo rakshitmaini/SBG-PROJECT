@@ -3,6 +3,10 @@ import ContactWrapper from "./styledComponent/style.contact";
 import HeaderBanner from "../baseComponent/headerComponent/HeaderBanner";
 import { useState } from "react";
 import dynamic from "next/dynamic";
+import { contactSchema } from "../../validations/contactValidation";
+import { toast, ToastContainer } from "react-toastify";
+import { firestore } from "../../firebase.config";
+
 const DynamicComponentWithNoSSR = dynamic(
   () => import("../baseComponent/MapComponent"),
   { ssr: false }
@@ -116,27 +120,54 @@ const officeData = [
   },
 ];
 
+const initState = {
+  name: "",
+  mobile: "",
+  email: "",
+  subject: "",
+  message: "",
+};
+
 const ContactUs = () => {
-  const [form, setform] = useState({
-    name: "",
-    phone: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+  const [data, setData] = useState(initState);
 
-  // const [documentWidth, setdocumentWidth] = useState(width);
-  // useEffect(() => {
-  //   let width = document.documentElement.clientWidth;
-  //   setdocumentWidth(width);
-  //   console.log(documentWidth);
-  // }, [width]);
-
-  const handleFieldChange = (e) => {
-    setform({ ...form, [e.target.name]: e.target.value });
+  const handleFieldChange = async (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
   };
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    console.log("submitted");
+    // try {
+    //   const dt = await contactSchema.validate(data);
+    //   console.log({ dt });
+    // } catch (err) {
+    //   console.log({ err });
+    // }
+    const dt = await contactSchema.isValid(data);
+    if (dt) {
+      console.log({ data });
+      firestore
+        .collection("contact")
+        .add(data)
+        .then((res) => {
+          console.log(res.id);
+          setData(initState);
+          toast.success(
+            "Form Submitted successfully. We will get back to you soon."
+          );
+        })
+        .catch((error) => {
+          console.log({ error });
+        });
+    } else {
+      console.log("fail");
+      toast.error("Form field is invalid");
+    }
+  }
   return (
     <>
+      <ToastContainer />
       <ContactWrapper>
         <div className="container-fluid">
           <HeaderBanner
@@ -146,14 +177,17 @@ const ContactUs = () => {
           />
           <div className="contact-outer row">
             <div className="col-lg-7 col-md-6 col-sm-12">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="row">
                   <div className="form-group col-lg-6 col-md-6">
                     <label for="name">Name</label>
                     <input
                       type="text"
+                      name="name"
+                      value={data.name}
+                      onChange={handleFieldChange}
                       class="form-control"
-                      placeholder="Enter Name"
+                      placeholder="Full Name"
                       autoComplete="off"
                     />
                   </div>
@@ -161,8 +195,11 @@ const ContactUs = () => {
                     <label for="name">Phone Number</label>
                     <input
                       type="text"
+                      name="mobile"
+                      onChange={handleFieldChange}
+                      value={data.mobile}
                       class="form-control"
-                      placeholder="Enter Phone Number"
+                      placeholder="9876543210"
                       autoComplete="off"
                     />
                   </div>
@@ -172,7 +209,10 @@ const ContactUs = () => {
                     <label for="email">Email</label>
                     <input
                       type="email"
+                      name="email"
                       class="form-control"
+                      value={data.email}
+                      onChange={handleFieldChange}
                       placeholder="Enter Email-Id"
                       autoComplete="off"
                     />
@@ -181,7 +221,10 @@ const ContactUs = () => {
                     <label for="subject">Subject</label>
                     <input
                       type="text"
+                      name="subject"
                       class="form-control"
+                      value={data.subject}
+                      onChange={handleFieldChange}
                       placeholder="Enter Subject"
                       autoComplete="off"
                     />
@@ -190,21 +233,23 @@ const ContactUs = () => {
                 <div class="form-group">
                   <label for="message">Message</label>
                   <textarea
+                    name="message"
                     class="form-control"
-                    value="I would like to have a word about.."
+                    value={data.message}
+                    onChange={handleFieldChange}
                     rows="2"
                     autoComplete="off"
                   />
                 </div>
 
                 <button
-                  type="button"
+                  type="submit"
                   style={{
                     backgroundColor: "orangered",
                     color: "white",
                     width: "100%",
                   }}
-                  class="btn"
+                  className="btn"
                 >
                   Send Message
                 </button>

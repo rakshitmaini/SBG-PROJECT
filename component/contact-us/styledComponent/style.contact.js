@@ -15,14 +15,17 @@ export default styled.div`
         textarea {
           background-color: #f5f2f2;
           color: darkblue;
+          padding: 0.8rem;
         }
 
         label {
           font-weight: 600;
         }
         button {
+          font-size: 1.3rem;
           margin-top: 0.8rem;
           margin-bottom: 1.3rem;
+          padding: 1.2rem;
         }
       }
       .container-fluid__head-office {
@@ -68,8 +71,8 @@ export default styled.div`
   }
   .container-fluid__offices-data {
     background-color: #f5f8fa;
-    margin-top: 0rem;
-
+    margin-top: 3px;
+    padding: 3rem 0;
     .row {
       padding: 0.5rem 3.125rem 0.5rem 3.125rem;
       display: grid;
@@ -97,13 +100,19 @@ export default styled.div`
           font-weight: 400;
         }
       }
+      .container-fluid__office-details {
+        /* padding-left: 10rem; */
+        .container-fluid__offices-text {
+          max-width: 400px;
+        }
+      }
       .container-fluid__office-image {
         img {
           width: 500px;
           height: 350px;
-          box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-            rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-            rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+          border: 2px solid #d5d5d5;
+          padding: 10px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
       }
     }

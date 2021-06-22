@@ -1,6 +1,7 @@
 import "../styles/globals.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "react-toastify/dist/ReactToastify.css";
 import Layout from "../component/layout";
 import AOS from "aos";
 import "aos/dist/aos.css";
