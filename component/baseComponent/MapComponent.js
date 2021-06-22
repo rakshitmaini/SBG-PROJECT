@@ -17,7 +17,7 @@ const MapComponent = () => {
       />
       <Marker position={[28.622003, 77.214005]}>
         <Popup>
-          Shri Balaji Global <br /> PVT LTD.
+          Shri Balaji Global <br /> Insurance Solution <br /> Private Ltd.
         </Popup>
       </Marker>
     </Map>

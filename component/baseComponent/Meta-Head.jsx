@@ -1,12 +1,11 @@
 import Head from "next/head";
 
 export function MetaHead({ title }) {
+  const head = title ? `${title} | ` : "";
   return (
     <>
       <Head>
-        <title>
-          {title || "Title"} | Shri Balaji Global Insurance Private Limited
-        </title>
+        <title>{head} Shri Balaji Global Insurance Solution Pvt. Ltd.</title>
       </Head>
     </>
   );

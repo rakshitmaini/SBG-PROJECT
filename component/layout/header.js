@@ -17,7 +17,7 @@ const Header = () => {
                 <img
                   src="/logo.png"
                   height="100%"
-                  alt="Shri Balaji Global Insurance Private Limited"
+                  alt="Shri Balaji Global Insurance Solution Private Limited"
                 />
               </Link>
             </div>

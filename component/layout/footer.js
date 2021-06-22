@@ -76,7 +76,7 @@ const Footer = () => {
                 as="link"
                 href="/#"
                 src="/logo.png"
-                alt="Shri Balaji Global Insurance Private Limited"
+                alt="Shri Balaji Global Insurance Solution Private Limited"
                 className="logo-img"
               />
               <p>
@@ -131,7 +131,8 @@ const Footer = () => {
           </div>
           <hr />
           <div className="text-center">
-            Copyright © 2021 SHRI BALAJI GLOBAL PRIVATE LIMITED
+            Copyright © 2021 SHRI BALAJI GLOBAL INSURANCE SOLUTION PRIVATE
+            LIMITED
           </div>
         </div>
       </footer>
