@@ -19,7 +19,7 @@ export default styled.div`
       z-index: 1;
     }
     .overlay-text {
-      z-index: 999;
+      z-index: 9;
       width: 100%;
       padding: 3.125rem;
       background-color: rgba(68, 85, 90, 0.3);
@@ -34,6 +34,7 @@ export default styled.div`
       }
       h3 {
         font-weight: 500;
+        font-size: 1.3rem;
       }
     }
 
@@ -68,8 +69,9 @@ export default styled.div`
   }
   @media screen and (max-width: 480px) {
     .overlay-text {
+      top: 50% !important;
       h1 {
-        font-size: 1.875rem;
+        font-size: 1.9rem !important;
       }
     }
   }

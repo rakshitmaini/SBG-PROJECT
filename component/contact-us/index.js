@@ -7,7 +7,7 @@ import { contactSchema } from "../../validations/contactValidation";
 import { toast, ToastContainer } from "react-toastify";
 import { firestore } from "../../firebase.config";
 
-const DynamicComponentWithNoSSR = dynamic(
+const MapDynamicComponentWithNoSSR = dynamic(
   () => import("../baseComponent/MapComponent"),
   { ssr: false }
 );
@@ -268,8 +268,8 @@ const ContactUs = () => {
                 </button>
               </form>
             </div>
-            <div className="col-lg-5 col-md-6 col-sm-12">
-              <DynamicComponentWithNoSSR />
+            <div style={{ zIndex: 2 }} className="col-lg-5 col-md-6 col-sm-12">
+              <MapDynamicComponentWithNoSSR />
               <div className="container-fluid__head-office">
                 <h5>
                   205 Ashoka Place 877, East Park Road Karol Bagh New Delhi

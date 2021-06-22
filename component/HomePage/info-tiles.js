@@ -2,19 +2,19 @@ import InfoWrapper from "./styledComponent/style.info-tiles";
 
 const TilesData = [
   {
-    icon: "fa-clock-o",
-    title: "Always on time.",
-    info: "Click edit button to change this text. Lorem ipsum dolor sit amet",
+    icon: "fa-line-chart",
+    title: "Value Added Services",
+    info: "Provide value-added services to our customers to get unmatched solution possible",
   },
   {
     icon: "fa-check",
-    title: "Hard Working",
-    info: "Click edit button to change this text. Lorem ipsum dolor sit amet",
+    title: "Committed to You",
+    info: "We are committed to achieve excellence in advising quality products",
   },
   {
     icon: "fa-calendar",
     title: "24/7 Availability",
-    info: "Click edit button to change this text. Lorem ipsum dolor sit amet",
+    info: "Feel free to contact us anytime, get your queries cleared.",
   },
 ];
 
@@ -25,7 +25,7 @@ const InfoTiles = () => {
         <div className="container-fluid">
           <div className="title">
             <h1>Why choose us</h1>
-            <h1>Accurate Record Keeping</h1>
+            <h1>Deliver Top Quality Products</h1>
           </div>
           <div className="row">
             {TilesData.map((d, i) => (
