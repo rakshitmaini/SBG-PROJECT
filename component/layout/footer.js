@@ -75,7 +75,7 @@ const Footer = () => {
               <img
                 as="link"
                 href="/#"
-                src="/Asset 3.png"
+                src="/logo.png"
                 alt="Shri Balaji Global Insurance Private Limited"
                 className="logo-img"
               />

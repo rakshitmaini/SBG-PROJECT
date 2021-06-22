@@ -15,7 +15,7 @@ const Header = () => {
             <div className="nav-logo">
               <Link href="/">
                 <img
-                  src="/Asset 3.png"
+                  src="/logo.png"
                   height="100%"
                   alt="Shri Balaji Global Insurance Private Limited"
                 />
