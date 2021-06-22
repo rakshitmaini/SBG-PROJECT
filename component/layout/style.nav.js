@@ -20,6 +20,7 @@ export default styled.div`
       .nav-logo img {
         cursor: pointer;
         width: 9.375rem;
+        vertical-align: super;
       }
       .nav-icon {
         display: none;

@@ -96,7 +96,8 @@ export default styled.div`
           border-top: 0.125rem solid #e9ecef;
         }
         .logo-img {
-          width: 12.5rem;
+          width: 13rem;
+          margin-left: -1.1rem;
           margin-bottom: 1rem;
         }
       }
@@ -106,7 +107,6 @@ export default styled.div`
     .footer {
       .logo-img {
         width: 12.5rem;
-        margin-bottom: 1rem;
       }
       .container {
         padding-right: 0.9375rem;
@@ -167,7 +167,6 @@ export default styled.div`
       }
       .logo-img {
         width: 9.375rem;
-        margin-bottom: 1rem;
       }
     }
   }
