@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import variables from "../../styles/variables";
-import { fadeIn } from "../../styles/animations";
 
 export default styled.div`
   div {

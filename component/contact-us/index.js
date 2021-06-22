@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ContactWrapper from "./styledComponent/style.contact";
 import HeaderBanner from "../baseComponent/headerComponent/HeaderBanner";
 import { useState } from "react";
