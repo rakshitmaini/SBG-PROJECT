@@ -30,6 +30,7 @@ const teamData = [
 ];
 const settings = {
   centerMode: true,
+  focusOnSelect: true,
   arrows: true,
   className: "center",
   autoplay: true,
@@ -56,6 +57,8 @@ const settings = {
         // slidesToScroll: 1,
         autoplaySpeed: 6000,
         infinite: true,
+        swipeToSlide: true,
+        swipe: true,
       },
     },
   ],

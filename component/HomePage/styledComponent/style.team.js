@@ -54,13 +54,13 @@ export default styled.div`
                 text-align: center;
                 width: 25rem;
                 max-width: 100%;
-                .card-image {
+                /* .card-image {
                   img {
                     width: 75px;
                     margin: auto;
                     border-radius: 50%;
                   }
-                }
+                } */
                 .member-img {
                   min-width: 75px;
                   height: auto;
@@ -68,9 +68,9 @@ export default styled.div`
                   img {
                     border-radius: 50%;
                     /* border: 1px solid #d5d5d5; */
-                    padding: 0.3rem;
-                    width: 75%;
-                    height: 100%;
+                    margin: auto;
+                    width: 175px;
+                    height: 175px;
                     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                     background: rgb(250, 246, 237);
                     background: linear-gradient(
@@ -96,7 +96,7 @@ export default styled.div`
           .slick-center {
             -webkit-transform: scale(1.25);
             -moz-transform: scale(1.25);
-            transform: scale(1.1) !important;
+            transform: scale(1.09) !important;
             padding: 1.25rem;
             .card-outer {
               opacity: 1 !important;
@@ -133,6 +133,27 @@ export default styled.div`
       text-align: center;
       .card-inner {
         width: 25rem;
+      }
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .member-img {
+      min-width: 75px;
+      height: auto;
+
+      img {
+        border-radius: 50%;
+        /* border: 1px solid #d5d5d5; */
+        margin: auto;
+        width: 150px !important;
+        height: 150px !important;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background: rgb(250, 246, 237);
+        background: linear-gradient(
+          90deg,
+          rgba(250, 246, 237, 1) 0%,
+          rgba(247, 250, 255, 1) 100%
+        );
       }
     }
   }
