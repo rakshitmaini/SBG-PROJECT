@@ -274,7 +274,7 @@ const ContactUs = () => {
         {officeData.map((ele, index) => {
           if (index % 2) {
             return (
-              <div id={ele.id} className="container-fluid__offices-data">
+              <div className="container-fluid__offices-data">
                 <div className="row">
                   <div className="container-fluid__office-details ">
                     <div className="container-fluid__offices-text">
@@ -290,7 +290,11 @@ const ContactUs = () => {
                   </div>
 
                   <div className="container-fluid__office-image">
-                    <img src={ele.image} className=" img-responsive " />
+                    <img
+                      src={ele.image}
+                      id={ele.id}
+                      className=" img-responsive "
+                    />
                   </div>
                 </div>
               </div>
@@ -300,7 +304,11 @@ const ContactUs = () => {
             <div id={ele.id} className="container-fluid__offices-data">
               <div className="row">
                 <div className="container-fluid__office-image col-xs-1 col-xs-12 ">
-                  <img src={ele.image} className=" img-responsive " />
+                  <img
+                    src={ele.image}
+                    id={ele.id}
+                    className=" img-responsive "
+                  />
                 </div>
                 <div className="container-fluid__office-details ">
                   <div className="container-fluid__offices-text">
