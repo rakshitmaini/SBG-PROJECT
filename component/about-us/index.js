@@ -74,7 +74,7 @@ const AboutUs = () => {
             <div className="block-member" id="Sachin-Sharma">
               <div className="member-img">
                 <img
-                  src="/aboutUsAssets/team/sachin.png"
+                  src="/aboutUsAssets/team/sachin-sharma.jpg"
                   alt="Sachin Sharma, Principal Office"
                 />
               </div>
@@ -82,36 +82,39 @@ const AboutUs = () => {
                 <h3 className="member-name">Sachin Sharma</h3>
                 <h6 className="member-profile">Principal Office</h6>
                 <p>
-                  Mr. Sachin Sharma, Post graduate in Global Marketing & Finance
-                  and B.Com from Delhi University, aged 44 years, is appointed
-                  as Principle Office of SBGIS. He has over 23 years of rich
-                  experience primarily in financial/ insurance services.
+                  Mr. Sachin Sharma is a post graduate in Global marketing and
+                  Finance with a phenomenal work experience of 23 years in
+                  majorly Financial and Insurance services.
                   <br /> <br />
-                  Experienced and innovative with 23 years of rich experience in
-                  customer service and insurance business administration skills.
+                  An highly experienced and dedicated professional/entrepreneur
+                  with considerable expertise in customer service and insurance
+                  business management.
                   <br /> <br />
-                  High personal integrity, and able to relate to and create
-                  trust in all. Highly articulate, confident and persuasive
-                  team-builder, able to motivate and communicate to achieve
-                  exceptional business performance.
+                  Sachin Sharma is a diversified team player who believes in
+                  effective collaboration with the team members and to
+                  communicate effectively to achieve desired/exceptional
+                  business results.
                   <br /> <br />
-                  Dependable and reliable in supporting and enabling team effort
-                  to produce genuine long-term sustainable development.
-                  Persistent and flexible approach to the mutually beneficial
-                  achievement of business plans and personal goals of staff,
-                  suppliers and customers.
+                  His high personal integrity, confident approach and supporting
+                  nature enabled the teams to deliver long-term sustainable
+                  development. His flexible and persistent behaviour resulted
+                  not only in the overall growth of the company but also leads
+                  to Personal development of the people that he was partnered
+                  with.
+                  <br /> <br />
+                  His hobbies include reading books and travelling.
                 </p>
               </div>
             </div>
             <div className="block-member" id="Faiz-Khan">
               <div className="member-img">
                 <img
-                  src="/aboutUsAssets/avatar.jpg"
+                  src="/aboutUsAssets/team/faiz-khan.jpg"
                   alt="Faiz Khan, Director"
                 />
               </div>
               <div className="member-info">
-                <h3 className="member-name">Faiz Khan</h3>
+                <h3 className="member-name">Faizullah khan</h3>
                 <h6 className="member-profile">Director</h6>
                 <p>
                   20 years of rich experience in Venue Sales model. One of the
@@ -128,7 +131,7 @@ const AboutUs = () => {
             <div className="block-member" id="Pankaj-Kumar">
               <div className="member-img">
                 <img
-                  src="/aboutUsAssets/avatar.jpg"
+                  src="/aboutUsAssets/team/pankaj-kumar.jpg"
                   alt="Pankaj Kumar, Director"
                 />
               </div>
@@ -137,38 +140,28 @@ const AboutUs = () => {
                 <h6 className="member-profile">Director</h6>
                 <p>
                   Pankaj Kumar is a self-driven entrepreneurial leader with 16
-                  years of diverse work experience covering BPO & BFSI Sector.
+                  years of remarkable work experience spanning across BPO, NBFC
+                  & Insurance Sector where he was responsible for end-to-end
+                  management. His leadership skills and preserving approach to
+                  collaborate effectively with team members has pioneered the
+                  best results to the organization.
                   <br />
                   <br />
-                  He was associated with prestigious NBFC as Vice President &
-                  was responsible for end-to-end management. His leadership
-                  skills and keen interest in sustainable business practices has
-                  manifested and pioneered the best results to the organisation
-                  and helped the business grow exponentially over a period.
-                  Additionally, he was responsible for driving all large and
+                  Additionally, he was responsible for driving large and
                   strategic deals for expanding the insurance distribution
-                  channel.
+                  channel that helped the business grow exponentially over a
+                  period. He is known for his ability to seamlessly partner with
+                  team members and achieve shared goals. He is a firm believer
+                  in the fact that deliveries happen through people and team.
                   <br />
                   <br />
-                  Earlier to this, he also worked with IIFL as an Associate Vice
-                  President and has been associated with other leading
-                  organisations like Intouch Solutions, Religare Technologies,
-                  Royal Sundaram at a Senior Management Roles. He is known for
-                  his ability to seamlessly partner with team members and
-                  achieve shared goals. He is a firm believer in the fact that
-                  deliveries happen through people and teams.
+                  On the academic front, Pankaj holds a Master’s Degree in
+                  Finance & Marketing. He is a fervent traveler and likes to
+                  explore different places across the world.
                   <br />
                   <br />
-                  On the academic front, Pankaj holds a Masters Degree in
-                  Finance & Marketing from ICFAI University & has a track record
-                  of driving exponential growth in his divisions, setting up
-                  operations, driving a culture of excellence and disciplined
-                  management.
-                  <br />
-                  <br />
-                  His hobbies include travelling to different places and
-                  exploring new things. Mr. Pankaj has been a Director of the
-                  Company since it’s incorporation.
+                  Mr. Kumar serves as a Director to Shri Balaji since its
+                  incorporation.
                 </p>
               </div>
             </div>

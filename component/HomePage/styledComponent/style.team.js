@@ -42,7 +42,6 @@ export default styled.div`
         text-align: center;
         .slick-track {
           .slick-slide {
-            /* width: 33%; */
             padding: 0.625rem 3.125rem;
             .card-outer {
               opacity: 1;
@@ -55,23 +54,18 @@ export default styled.div`
                 text-align: center;
                 width: 25rem;
                 max-width: 100%;
-                /* .card-image {
-                  img {
-                    width: 75px;
-                    margin: auto;
-                    border-radius: 50%;
-                  }
-                } */
+                display: grid;
+                place-items: center;
                 .member-img {
                   min-width: 75px;
-                  height: auto;
-
+                  height: 175px;
+                  width: 175px;
                   img {
                     border-radius: 50%;
-                    /* border: 1px solid #d5d5d5; */
                     margin: auto;
-                    width: 175px;
-                    height: 175px;
+                    width: 100%;
+                    height: 100%;
+
                     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                     background: rgb(250, 246, 237);
                     background: linear-gradient(

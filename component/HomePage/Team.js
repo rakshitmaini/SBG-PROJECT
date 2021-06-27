@@ -8,24 +8,24 @@ const teamData = [
     profile: "",
     path: "/about#Sachin-Sharma",
     introLine:
-      "Mr. Sachin Sharma, Post graduate in Global Marketing & Finance and B.Com from Delhi University, aged 44 years, is appointed as Principle Office of SBGIS. He has over 23 years..",
-    src: "/aboutUsAssets/team/sachin.png",
+      "Mr. Sachin Sharma is a post graduate in Global marketing and Finance with a phenomenal work experience of 23 years in majorly Financial and Insurance services. Read More. . .",
+    src: "/aboutUsAssets/team/sachin-sharma.jpg",
   },
   {
-    name: "Faiz Khan",
+    name: "Faizullah khan",
     profile: "",
     path: "/about#Faiz-Khan",
     introLine:
-      "20 years of rich experience in Venue Sales model. One of the founder of Venue Sales Channel in Bajaj Capital. Highly experienced and innovative with... ",
-    src: "/aboutUsAssets/avatar.jpg",
+      "20 years of rich experience in Venue Sales model. One of the founder of Venue Sales Channel in Bajaj Capital. Highly experienced and innovative with sophisticated salescustomer service and business administration skills. Read More. . . ",
+    src: "/aboutUsAssets/team/faiz-khan.jpg",
   },
   {
     name: "Pankaj Kumar",
     profile: "",
     path: "/about#Pankaj-Kumar",
     introLine:
-      "Pankaj Kumar is a self-driven entrepreneurial leader with 16 years of diverse work experience covering BPO & BFSI Sector.He was associated with prestigious NBFC as Vice President & was responsible for end-to-end management. His leadership...",
-    src: "/aboutUsAssets/avatar.jpg",
+      "Pankaj Kumar is a self-driven entrepreneurial leader with 16 years of diverse work experience covering BPO & BFSI Sector.He was associated with prestigious NBFC as Vice President & was responsible for end-to-end management. Read More. . .",
+    src: "/aboutUsAssets/team/pankaj-kumar.jpg",
   },
 ];
 const settings = {
