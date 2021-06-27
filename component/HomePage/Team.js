@@ -16,7 +16,7 @@ const teamData = [
     profile: "",
     path: "/about#Faiz-Khan",
     introLine:
-      "20 years of rich experience in Venue Sales model. One of the founder of Venue Sales Channel in Bajaj Capital. Highly experienced and innovative with sophisticated salescustomer service and business administration skills. Read More. . . ",
+      "20 years of rich experience in Venue Sales model. One of the founder of Venue Sales Channel in Bajaj Capital. Highly experienced and innovative with sophisticated sales, customer service. Read More. . . ",
     src: "/aboutUsAssets/team/faiz-khan.jpg",
   },
   {
@@ -24,7 +24,7 @@ const teamData = [
     profile: "",
     path: "/about#Pankaj-Kumar",
     introLine:
-      "Pankaj Kumar is a self-driven entrepreneurial leader with 16 years of diverse work experience covering BPO & BFSI Sector.He was associated with prestigious NBFC as Vice President & was responsible for end-to-end management. Read More. . .",
+      "Pankaj Kumar is a self-driven entrepreneurial leader with 16 years of diverse work experience covering BPO & BFSI Sector. He was associated with prestigious NBFC as Vice President. Read More. . .",
     src: "/aboutUsAssets/team/pankaj-kumar.jpg",
   },
 ];
