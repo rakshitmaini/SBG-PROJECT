@@ -19,6 +19,8 @@ export const BannerWrapper = styled.section`
     url("/vision-assets/vision-bg.jpg");
   background-blend-mode: screen;
   .content {
+    z-index: 4;
+
     h2 {
       color: white;
       font-weight: 700;
