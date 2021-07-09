@@ -50,6 +50,8 @@ export default styled.div`
               border-radius: 1.875rem;
               width: 100%;
               height: 450px;
+              display: flex !important;
+              justify-content: center;
               .card-inner {
                 text-align: center;
                 width: 25rem;
