@@ -80,7 +80,7 @@ const AboutUs = () => {
               </div>
               <div className="member-info">
                 <h3 className="member-name">Sachin Sharma</h3>
-                <h6 className="member-profile">Principal Office</h6>
+                <h6 className="member-profile">Principal Officer & CEO</h6>
                 <p>
                   Mr. Sachin Sharma is a post graduate in Global marketing and
                   Finance with a phenomenal work experience of 23 years in
@@ -115,7 +115,7 @@ const AboutUs = () => {
               </div>
               <div className="member-info">
                 <h3 className="member-name">Faizullah khan</h3>
-                <h6 className="member-profile">Director</h6>
+                <h6 className="member-profile">COO</h6>
                 <p>
                   20 years of rich experience in Venue Sales model. One of the
                   founder of Venue Sales Channel in Bajaj Capital. Highly
